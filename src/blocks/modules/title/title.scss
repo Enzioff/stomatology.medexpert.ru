@@ -1,0 +1,41 @@
+.title {
+  font-size: rem(32);
+  font-weight: 500;
+  line-height: 1.43;
+
+  @include r($mobile) {
+    font-size: rem(30);
+  }
+
+  &--page {
+    font-size: rem(40);
+    @include r($mobile) {
+      font-size: rem(30);
+    }
+  }
+
+  &--page-intro {
+    font-size: calc(30px + 10 * ((100vw - 320px) / (1940 - 320)));
+    margin-bottom: rem(20);
+  }
+
+  &--small {
+    font-size: rem(24);
+    @include r($mobile) {
+      font-size: rem(20);
+    }
+  }
+
+  &--min {
+    font-size: rem(20);
+    @include r($mobile) {
+      font-size: rem(18);
+    }
+  }
+
+  &--upper {
+    text-transform: uppercase;
+    font-size: rem(18);
+    margin-bottom: rem(10);
+  }
+}

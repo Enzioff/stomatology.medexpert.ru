@@ -1,0 +1,371 @@
+.page-intro {
+  background-color: #F2F4F6;
+  overflow: hidden;
+  position: relative;
+  height: fit-content;
+  min-height: rem(420);
+  @include r($laptop-min) {
+    margin-top: 0;
+  }
+  @include r($mobile) {
+    height: rem(615);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: rem(420);
+    padding: rem(20) 0 rem(40);
+    z-index: 1;
+    @include r($mobile) {
+      height: rem(615);
+      justify-content: space-between;
+      padding: rem(25) 0 rem(50);
+    }
+  }
+
+
+  &__inner {
+    height: 100%;
+  }
+
+  &__inner--min {
+    max-width: rem(365);
+  }
+
+  &__text {
+    max-width: rem(470);
+    margin-bottom: rem(40);
+    font-size: rem(16);
+    line-height: 1.4;
+    font-weight: 300;
+    @include r($mobile) {
+      margin-bottom: rem(32);
+    }
+  }
+
+  &__text--clinics {
+    margin-bottom: rem(20);
+  }
+
+  &__picture {
+    height: rem(420);
+    //overflow: hidden;
+    z-index: 0;
+    @include r($mobile) {
+      position: absolute;
+      bottom: rem(80);
+      max-width: 100%;
+      height: 65%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, #F2F2F6 1.02%, rgba(242, 244, 246, 0.4) 80%);
+        z-index: 1;
+      }
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+      object-fit: contain;
+      object-position: right;
+      @include r($mobile) {
+        //width: 100%;
+        //height: auto;
+        max-height: 100%;
+        object-position: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__picture--bottom {
+    bottom: 0;
+  }
+
+  &__picture--mirror {
+    @include r($mobile) {
+      transform: scale(-1, 1);
+    }
+  }
+
+  &__picture--decor-round {
+    overflow: visible;
+    position: relative;
+    @include r($mobile) {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: rem(960);
+      height: rem(960);
+      border-radius: 50%;
+      background-color: #EBF0F5;
+      top: -50%;
+      left: 8%;
+      @include r($mobile) {
+        content: none;
+      }
+    }
+
+    img {
+      width: auto;
+      max-height: rem(262);
+      margin-left: auto;
+      position: relative;
+      top: rem(120);
+      @include r($mobile) {
+        height: fit-content;
+        max-height: 100%;
+        width: 90%;
+        top: auto;
+        margin: auto auto rem(10);
+      }
+    }
+  }
+
+  &__picture--shadow {
+    @include r($mobile) {
+      min-width: 100vw;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(0.8deg, #F2F2F6 1.02%, rgba(242, 244, 246, 0.4) 80%);
+        z-index: 1;
+      }
+    }
+  }
+
+  &__picture--vac {
+    min-width: rem(720);
+    right: rem(-160);
+    @include r($mobile) {
+      height: rem(428);
+      bottom: 0;
+      left: auto;
+    }
+  }
+
+  &__img--vac {
+    position: relative;
+    scale: 1.3;
+    top: rem(78);
+    left: rem(6);
+    @include r($mobile) {
+      top: 0;
+      left: 0;
+      scale: 1;
+      max-height: none !important;
+    }
+  }
+
+  &__picture--full {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    overflow: visible;
+    @include r($mobile) {
+      width: 100%;
+    }
+
+    img {
+      width: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__picture--no-header {
+    height: 100%;
+    max-width: rem(695);
+    bottom: 0;
+    overflow: visible;
+    @include r($laptop-min) {
+      margin-left: rem(-110);
+    }
+    @include r($mobile) {
+      max-width: 100vw;
+    }
+
+    img {
+      width: auto;
+      max-width: rem(753);
+      @include r($mobile) {
+        max-width: none;
+        object-position: left;
+      }
+    }
+  }
+
+  &__tel-block {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__tel {
+    color: $darkGreen;
+    font-size: rem(20);
+    font-weight: 500;
+  }
+
+  &__link {
+    color: $green;
+    font-weight: 300;
+  }
+
+  &__top {
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    a {
+      white-space: nowrap;
+    }
+  }
+
+  &__bottom--column {
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+    align-items: flex-start;
+    @include r($mobile) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__bottom--column-mob {
+    @include r($mobile) {
+      flex-direction: column;
+      align-items: flex-start !important;
+      padding-bottom: 0;
+    }
+  }
+
+  &__bottom-tel {
+    font-size: rem(20);
+    font-weight: 500;
+    margin-right: rem(50);
+    @include r($mobile) {
+      margin-right: 0;
+    }
+  }
+
+  &__bottom-mail {
+    font-weight: 300;
+    margin-right: rem(50);
+  }
+
+  &__bottom-addr {
+    font-weight: 300;
+
+    svg {
+      width: rem(16);
+      height: rem(16);
+    }
+  }
+
+  &--min {
+    min-height: 100%;
+    height: rem(250);
+    @include r($mobile) {
+      height: rem(400);
+    }
+
+    &__picture {
+      height: 100%;
+      width: 100%;
+      max-width: rem(500);
+      margin-left: auto;
+      @include r($mobile) {
+        margin-right: auto;
+        width: auto;
+        max-width: none;
+        bottom: 0;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        object-position: 40% 50%;
+        @include r($mobile) {
+          width: auto;
+        }
+      }
+    }
+
+    .page-intro__content {
+      min-height: rem(250);
+      @include r($mobile) {
+        height: rem(400);
+      }
+    }
+  }
+
+  &--big {
+    height: rem(500);
+    @include r($mobile) {
+      height: rem(615);
+    }
+
+    .page-intro__content {
+      height: rem(500);
+      @include r($mobile) {
+        height: rem(615);
+      }
+    }
+  }
+
+  &--no-header {
+    height: rem(500);
+    @include r($mobile) {
+      height: rem(812);
+    }
+  }
+
+  &--no-header__content {
+    padding: rem(162) 0 rem(40);
+    height: rem(500);
+    @include r($mobile) {
+      height: rem(812);
+      padding: rem(150) 0 rem(50);
+    }
+  }
+
+  &--no-header__bottom {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    @include r($mobile) {
+      display: block;
+      visibility: visible;
+      position: relative;
+    }
+  }
+}

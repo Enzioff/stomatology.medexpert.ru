@@ -1,0 +1,9 @@
+.link-icon {
+  display: flex;
+  align-items: center;
+  svg {
+    width: rem(16);
+    max-height: rem(18);
+    margin-right: rem(10);
+  }
+}

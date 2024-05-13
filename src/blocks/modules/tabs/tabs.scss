@@ -1,0 +1,167 @@
+.tabs {
+  &__list {
+    display: flex;
+    position: relative;
+    @include r($mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: none;
+    width: 100%;
+  }
+
+  &__item--padding {
+    padding: rem(40) 0 0;
+    @include r($mobile) {
+      padding: rem(35) 0 0;
+    }
+  }
+  &__text {
+    b {
+      font-weight: 500;
+    }
+  }
+  &__icon {
+    width: rem(12);
+    height: rem(10);
+    fill: $darkGreen;
+    transform: rotate(90deg);
+  }
+
+  &__item.active {
+    display: block;
+  }
+
+  &__item-list {
+    margin-top: rem(35);
+    column-count: 4;
+    column-gap: rem(20);
+    @include r($laptop-min) {
+      column-count: 3;
+    }
+    @include r($mobile) {
+      margin-top: rem(40);
+      columns: 200px auto;
+    }
+  }
+
+  &__item-item {
+    margin-bottom: rem(7);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-link {
+    font-size: rem(16);
+    font-weight: 300;
+  }
+
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    scrollbar-face-color: $green;
+    scrollbar-track-color: #E1E5EA;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+      height: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $green;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #E1E5EA;
+    }
+
+    @include r($laptop-min) {
+      flex-wrap: nowrap;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      padding-bottom: rem(10);
+    }
+  }
+
+  &__controls--line {
+    border-bottom: 1px solid #E1E5EA;
+  }
+
+  &__controls--padding {
+    padding: rem(20) rem(30) 0;
+  }
+
+  &__trigger {
+    user-select: none;
+    cursor: pointer;
+    font-size: rem(18);
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all .3s ease-in-out;
+  }
+
+  &__trigger--desk {
+    display: block;
+    position: relative;
+    height: rem(40);
+    padding: 0 rem(45) rem(13) 0;
+    margin-right: rem(30);
+    @include r($mobile) {
+      padding: 0;
+      font-size: rem(16);
+      height: auto;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__trigger--desk.active {
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      height: 1px;
+      width: 100%;
+      background-color: #007A8F;
+      @include r($laptop-min) {
+        bottom: 0;
+      }
+      @include r($mobile) {
+        content: none;
+      }
+    }
+  }
+
+  &__trigger--mob {
+    display: none;
+    @include r($mobile) {
+      display: block;
+    }
+  }
+
+  &__trigger--round {
+    color: $green;
+    font-weight: 400;
+    padding: rem(10) rem(42);
+    border-radius: rem(120);
+    border: 1.5px solid #007A8F;
+    margin-right: rem(24);
+    margin-bottom: rem(24);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__trigger--round.active {
+    background-color: $green;
+    color: #FFFFFF;
+  }
+}

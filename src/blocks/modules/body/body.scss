@@ -1,0 +1,14 @@
+.body {
+    display: flex;
+    font-size: rem(16);
+    line-height: 1.44;
+    font-weight: 300;
+    min-height: 100vh;
+    overflow-x: hidden;
+    flex-direction: column;
+    font-family: $font-main;
+    color: $darkGreen;
+    justify-content: space-between;
+    align-items: stretch;
+    @include r($laptop-min) {}
+}

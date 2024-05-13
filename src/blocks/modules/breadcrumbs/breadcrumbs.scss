@@ -1,0 +1,33 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: rem(14);
+  font-weight: 300;
+  margin-bottom: rem(40);
+  @include r($laptop-min) {
+    flex-wrap: wrap;
+    row-gap: rem(18);
+  }
+  @include r($mobile) {
+    margin-bottom: rem(30);
+  }
+
+  &__link {
+    position: relative;
+    color: #007A8F;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-right: rem(20.5);
+
+    &:after {
+      content: '\2014';
+      position: absolute;
+      right: rem(-18);
+    }
+  }
+
+  &__curr-page {
+    color: #6E7677;
+  }
+}

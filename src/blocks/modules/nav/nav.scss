@@ -1,0 +1,71 @@
+.nav {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #E1E5EA;
+  @include r($mobile) {
+    overflow-x: scroll;
+    padding-bottom: rem(10);
+    &::-webkit-scrollbar-thumb {
+      background-color: $gray;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar {
+
+      width: rem(10);
+      height: rem(2);
+    }
+  }
+
+  &__link {
+    font-size: rem(20);
+    font-weight: 400;
+    white-space: nowrap;
+    margin-right: rem(60);
+    padding-bottom: rem(10);
+    position: relative;
+    @include r($mobile) {
+      font-size: rem(16);
+      margin-right: rem(10);
+    }
+
+    &:first-child {
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -1.5px;
+        height: 2px;
+        width: 100%;
+        background-color: #007A8F;
+      }
+    }
+
+    &:hover {
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -1.5px;
+        height: 2px;
+        width: 100%;
+        background-color: #007A8F;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  &__link.active {
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -1.5px;
+      height: 2px;
+      width: 100%;
+      background-color: #007A8F;
+    }
+  }
+}

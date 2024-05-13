@@ -1,0 +1,64 @@
+.search {
+  position: relative;
+
+  &__label {
+    display: block;
+    border-bottom: 1px solid #E1E5EA;
+    margin-bottom: rem(21);
+  }
+
+  &__input {
+    font-size: rem(20);
+    padding: rem(4) rem(30) rem(10) 0;
+    width: 100%;
+    @include r($mobile) {
+      font-size: rem(16);
+    }
+
+    &::placeholder {
+      font-size: rem(20);
+      font-weight: 300;
+      @include r($mobile) {
+        font-size: rem(16);
+      }
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    position: absolute;
+    top: rem(4);
+    right: 0;
+  }
+
+  &__icon {
+    width: rem(20);
+    height: rem(20);
+  }
+
+  &__text {
+    color: #8E9AA6;
+    font-size: rem(16);
+    font-weight: 300;
+
+    span {
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-underline-offset: 4px;
+    }
+  }
+
+  &--mobile {
+    label,
+    input,
+    input::placeholder {
+      font-size: rem(14);
+      font-weight: 300;
+    }
+
+    svg {
+      width: rem(15);
+      height: rem(15);
+    }
+  }
+}

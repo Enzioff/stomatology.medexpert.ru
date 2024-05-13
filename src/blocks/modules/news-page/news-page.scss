@@ -1,0 +1,14 @@
+.news-page {
+  &__intro-picture {
+    @include r($mobile) {
+      height: rem(300);
+      bottom: 0;
+    }
+  }
+  &__intro-button {
+    width: rem(188);
+    @include r($mobile) {
+      width: rem(160);
+    }
+  }
+}

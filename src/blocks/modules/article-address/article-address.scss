@@ -1,0 +1,134 @@
+.article-address {
+  position: relative;
+  background-color: #F2F4F6;
+  padding: rem(31) rem(36);
+  border-radius: 10px;
+  height: rem(185);
+
+  @include r($mobile) {
+    padding: rem(30);
+  }
+
+  &--wide {
+    width: 100%;
+    height: fit-content;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: rem(12);
+
+    p {
+      font-size: rem(18);
+      font-weight: 500;
+      @include r($mobile) {
+        font-size: rem(16);
+      }
+    }
+  }
+
+  &__popup-trigger {
+    width: rem(24);
+    height: rem(24);
+    @include r($mobile) {
+      width: rem(18);
+      height: rem(18);
+    }
+  }
+
+  &__tel--big {
+    font-size: rem(24);
+    font-weight: 600;
+    color: $green;
+    @include r($mobile) {
+      font-size: rem(20);
+    }
+  }
+
+  address {
+    a {
+      display: flex;
+      text-decoration: none;
+      font-weight: 300;
+      width: rem(170);
+    }
+  }
+
+  &__popup {
+    display: none;
+    position: absolute;
+    top: rem(55);
+    background-color: #FFFFFF;
+    padding: rem(40);
+    box-shadow: 10px 10px 30px rgba(55, 63, 63, 0.25);
+    z-index: 10;
+  }
+
+  &__popup-inner {
+    margin-bottom: rem(20);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
+  &__popup.active {
+    display: block;
+    right: 15%;
+    border-radius: rem(20) 0 rem(20) rem(20);
+    @include r($mobile) {
+      top: rem(50);
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content-info {
+    display: inline-block;
+    max-width: rem(290);
+    font-weight: 300;
+  }
+
+  &--wide__content {
+    @include r($mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__block-scroll {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    gap: rem(30);
+    max-height: rem(396);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0 rem(-17) rem(25) 0;
+    padding: 0 rem(10) rem(100) 0;
+    @include r($mobile) {
+      grid-template-columns: 1fr;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $darkGreen;
+      border-radius: 10px
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #F2F4F6
+    }
+  }
+}

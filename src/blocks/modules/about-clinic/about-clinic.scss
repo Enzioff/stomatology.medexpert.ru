@@ -1,0 +1,46 @@
+.about-clinic {
+  position: relative;
+  
+  &__intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    
+    @include r($mobile) {
+      flex-direction: column;
+    }
+  }
+  
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 570px;
+    padding-top: 38px;
+  }
+  
+  &__text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26.01px;
+  }
+  
+  &__picture {
+    display: flex;
+    width: 100%;
+    max-width: 425px;
+    flex-shrink: 0;
+    border-radius: 200px 200px 0 0;
+    overflow: hidden;
+    
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 50px;
+  
+  @include r($mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.01px;
+  }
+  
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  &__link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.12px;
+  }
+  
+  &__element {
+  
+  }
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+}

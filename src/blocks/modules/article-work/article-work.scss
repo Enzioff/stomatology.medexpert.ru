@@ -1,0 +1,32 @@
+.article-work {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $light-gray;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16/9;
+    
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 22px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28.9px;
+  }
+}

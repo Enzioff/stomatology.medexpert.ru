@@ -1,0 +1,7 @@
+.news-detail {
+  &__title {
+    @include r($mobile) {
+      margin-bottom: rem(5) !important;
+    }
+  }
+}

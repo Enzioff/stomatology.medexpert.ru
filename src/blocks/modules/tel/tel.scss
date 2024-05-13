@@ -1,0 +1,17 @@
+.tel {
+  display: block;
+  font-weight: 600;
+
+  &--header {
+    @include r($mobile) {
+      font-size: rem(17.5);
+    }
+  }
+  &--footer {
+    margin-bottom: rem(37);
+    font-size: rem(20);
+    @include r($laptop-min) {
+      margin-bottom: rem(15);
+    }
+  }
+}

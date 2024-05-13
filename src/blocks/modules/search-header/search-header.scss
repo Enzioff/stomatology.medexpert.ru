@@ -1,0 +1,66 @@
+.search-header {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__label {
+    display: none;
+    width: 0;
+    position: relative;
+    font-size: rem(14);
+    border-radius: 10px;
+    margin-right: rem(15);
+    transition: max-width .3s ease-in-out;
+  }
+
+  &__label.active {
+    display: block;
+    position: absolute;
+    height: rem(23);
+    right: rem(25);
+    animation-name: maxwidth;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    width: rem(200);
+  }
+
+  &__input {
+    position: absolute;
+    width: 100%;
+    min-width: rem(145);
+    height: 100%;
+    left: 0;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: rem(5);
+  }
+
+  &__icon {
+    width: rem(21.5);
+    height: rem(21.5);
+  }
+}
+
+@keyframes maxwidth {
+  0% {
+    width: rem(20);
+  }
+  30% {
+    width: rem(50);
+  }
+  60% {
+    width: rem(100);
+  }
+  90% {
+    width: rem(150);
+  }
+  100% {
+    width: rem(200);
+  }
+}

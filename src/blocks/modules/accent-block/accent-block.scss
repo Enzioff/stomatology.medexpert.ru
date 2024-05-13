@@ -1,0 +1,64 @@
+.accent-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(42) rem(42) rem(55);
+  background-color: #F2F4F6;
+  border-radius: 10px;
+  gap: rem(115);
+  @include r($laptop-min) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: rem(15);
+  }
+  @include r($mobile) {
+    padding: rem(20) rem(30);
+  }
+
+  & > p:first-child {
+    width: 20%;
+    @include r($laptop-min) {
+      width: 100%;
+    }
+  }
+
+  & > p:last-child {
+    width: 70%;
+    @include r($laptop-min) {
+      width: 100%;
+    }
+  }
+
+  &--short {
+    position: relative;
+    height: rem(240);
+    padding: rem(10) rem(45);
+    overflow: hidden;
+    @include r($mobile) {
+      height: rem(360);
+      padding: rem(30);
+    }
+
+    &__content {
+      @include r($mobile) {
+
+      }
+    }
+
+    &__picture {
+      height: 100%;
+      width: auto;
+      max-width: 50%;
+      position: relative;
+      bottom: rem(-10);
+      @include r($mobile) {
+        position: absolute;
+        bottom: 0;
+        right: rem(20);
+        max-width: none;
+        height: calc(120px + 130 * ((100vw - 320px) / (767 - 320)));
+      }
+    }
+  }
+}

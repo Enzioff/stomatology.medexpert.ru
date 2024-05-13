@@ -1,0 +1,135 @@
+.history {
+  &__pic {
+    width: 100%;
+    max-width: rem(470);
+    height: rem(270);
+    border-radius: 10px;
+    overflow: hidden;
+    @include r($mobile) {
+      max-width: none;
+      max-height: rem(189);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  &__article {
+    position: relative;
+    min-height: rem(270);
+    padding-top: rem(25);
+    margin: 0 0 rem(30) rem(30);
+    @include r($mobile) {
+      margin: 0;
+      padding-top: rem(20);
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: rem(55);
+      left: rem(-45);
+      width: rem(12);
+      height: rem(12);
+      background: url("../assets/images/decor-circle.svg") center no-repeat;
+
+      @include r($mobile) {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: rem(74);
+      left: rem(-40);
+      height: 110%;
+      width: 1px;
+      background-color: #D3D7DB;
+
+      @include r($mobile) {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+  }
+  &__article--last {
+    &:after {
+      height: 75%;
+    }
+  }
+
+  &__article-title {
+    font-size: rem(40);
+    font-weight: 500;
+    margin-bottom: rem(20);
+    @include r($mobile) {
+      font-size: rem(20);
+    }
+  }
+
+  &__article-content {
+    font-size: rem(16);
+    line-height: 1.4;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    margin-bottom: rem(10);
+    @include r($mobile) {
+      font-size: rem(14);
+      margin-bottom: rem(-10);
+    }
+
+    p {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__collapse-trigger {
+    color: $green;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 5px;
+  }
+
+  &__collapse-item {
+    position: relative;
+  }
+
+  &__collapse-content {
+    position: absolute;
+    top: 100%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 8px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 2px 2px 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 2px 2px 8px 0 rgba(34, 60, 80, 0.2);
+    z-index: 10;
+
+  }
+
+  &__collapse-inner {
+    padding: rem(20);
+
+    p {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}

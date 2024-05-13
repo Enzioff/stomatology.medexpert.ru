@@ -1,0 +1,129 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: $light;
+  @include r($mobile) {
+    position: relative;
+  }
+
+  &-top {
+    background-color: #F2F4F6;
+    padding: rem(11) 0;
+    @include r($mobile) {
+      padding: rem(27) 0 rem(24);
+      position: fixed;
+      width: 100%;
+      z-index: 999;
+    }
+  }
+
+  &-top__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 49px;
+    @include r($laptop-min) {
+      margin-right: 0;
+      justify-content: space-between;
+    }
+  }
+
+  &-bottom {
+    background-color: $light;
+    padding: rem(20) 0;
+    border-bottom: 1px solid #F2F4F6;
+    @include r($laptop-min) {
+      padding: rem(23) 0;
+    }
+    @include r($mobile) {
+      margin-top: rem(83)
+    }
+  }
+
+  &-bottom__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(16);
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-left: auto;
+    padding-left: rem(5);
+    @include r($laptop-min) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: rem(575);
+  }
+
+  &__nav-link {
+    font-size: rem(16);
+    font-weight: 400;
+  }
+
+  &--min {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: rem(55);
+    padding: rem(50) 0;
+    background-color: transparent;
+    @include r($mobile) {
+      padding: rem(55) 0;
+    }
+  }
+
+  &--min__logo {
+    @include r($mobile) {
+      width: 100% !important;
+    }
+  }
+
+  &__toolbar {
+    display: flex;
+    align-items: center;
+    gap: rem(15);
+  }
+
+  &__toolbar-btn-call {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: rem(5);
+  }
+
+  &__toolbar-btn-call-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(28);
+    height: rem(28);
+    border-radius: 50%;
+    background-color: #ab1f26;
+    svg {
+      fill: #FFFFFF;
+      width: rem(18);
+      height: rem(18);
+    }
+  }
+
+  &__toolbar-btn-call-text {
+    font-weight: 600;
+    font-size: rem(17);
+    white-space: nowrap;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,438 @@
+.form {
+  &-bg--gray {
+    padding: rem(50);
+    border-radius: 10px;
+    background-color: #F2F4F6;
+    @include r($laptop-min) {
+      padding: rem(50);
+    }
+    @include r($mobile) {
+      padding: rem(30) rem(20);
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    @include r($laptop-min) {
+      flex-direction: column;
+    }
+  }
+
+
+  &__label--switch {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: rem(16);
+      font-weight: 300;
+      margin-left: rem(15);
+    }
+
+    input[type="checkbox"] {
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+  }
+
+  input[type="checkbox"]:checked + .form__checkbox-switch {
+    background-color: $green;
+  }
+
+  input[type="checkbox"]:checked + .form__checkbox-switch:after {
+    left: auto;
+    transform: translate(100%, -50%);
+  }
+
+  &__checkbox-switch {
+    display: block;
+    position: relative;
+    width: rem(42);
+    height: rem(24);
+    border-radius: rem(40);
+    background: #D5DBE1;
+    transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+
+    &:after {
+      content: '';
+      display: block;
+      cursor: pointer;
+      width: rem(20);
+      height: rem(20);
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: rem(3);
+      z-index: 5;
+      background: white;
+      transition: all 0.3s cubic-bezier(0, 1, 0.5, 1);
+    }
+  }
+
+  &__checkbox-text {
+    @include r($mobile) {
+      font-size: rem(11);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__block-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+    padding: rem(50);
+    border-radius: 10px;
+    background-color: #F2F4F6;
+    @include r($laptop-min) {
+      padding: rem(50);
+    }
+    @include r($mobile) {
+      gap: rem(10);
+      padding: 0;
+    }
+  }
+
+  &__block-checkbox {
+    height: 100%;
+    @include r($laptop-min) {
+      column-count: 2;
+    }
+  }
+
+  &__wrapper--left {
+    //width: 100%;
+    width: 77%;
+    margin-right: rem(33);
+    gap: rem(20);
+    @include r($laptop-min) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: rem(20);
+      justify-content: space-between;
+    }
+  }
+
+  &__wrapper--right {
+    width: 100%;
+    max-width: 18%;
+    gap: rem(10);
+    @include r($laptop-min) {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  &__label {
+    width: 100%;
+    position: relative;
+
+    textarea {
+      min-height: rem(410);
+      @include r($mobile) {
+        min-height: auto;
+        height: rem(180);
+      }
+    }
+  }
+
+  &__label-icon {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: rem(30);
+    transform: translateY(-50%);
+
+    svg {
+      width: rem(16);
+      height: rem(16);
+      fill: $darkGreen;
+    }
+  }
+
+  &__input {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: rem(13) rem(25);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &::placeholder {
+      font-size: rem(16);
+      font-weight: 300;
+      @include r($mobile) {
+        font-size: rem(14);
+      }
+    }
+
+    &:focus {
+      outline: 1px solid #178699;
+    }
+  }
+
+  &__select-label {
+    display: flex;
+    position: relative;
+    flex: 0 1 48%;
+    @include r($mobile) {
+      flex: 1 1 100%;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: rem(25);
+      width: rem(12);
+      height: rem(10);
+      transform: translateY(-50%) rotate(90deg);
+      background-image: url("../assets/images/icon-arrow-min.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  &__select {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: rem(13) rem(25);
+    width: 100%;
+  }
+
+  &__select-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    padding: rem(13) rem(25);
+    font-size: rem(16);
+    font-weight: 300;
+    border-radius: 10px;
+    overflow: hidden;
+
+    svg {
+      width: rem(12);
+      height: rem(8);
+      fill: #0E3449;
+      transition: all .3s ease-in-out;
+    }
+  }
+
+  &__select-trigger.active {
+    svg {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__select-menu {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    top: rem(50);
+    background-color: #FFFFFF;
+    padding: rem(20) 0;
+    border-radius: 10px;
+    z-index: 100;
+  }
+
+  &__select-menu.active {
+    display: block;
+    visibility: visible;
+  }
+
+  &__select-menu-item {
+    cursor: pointer;
+    padding: rem(10) rem(14);
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(0, 124, 142, 0.4);
+      color: #FFFFFF;
+    }
+
+    input {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &__submit-btn {
+    max-width: 100%;
+    width: rem(187);
+  }
+
+  &--small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: rem(53) rem(30) rem(35);
+    @include r($mobile) {
+      padding: rem(40) rem(28);
+    }
+
+    form {
+      @include r($mobile) {
+
+      }
+    }
+
+    label {
+      height: rem(60);
+    }
+
+    &__input {
+      border-radius: rem(70);
+      padding-left: rem(65);
+    }
+
+    &__button {
+      width: rem(270);
+      height: rem(60)
+    }
+
+    &__checkbox input {
+      background-color: #FFFFFF !important;
+    }
+  }
+
+  &--big {
+    @include r($mobile) {
+      background-color: #F2F4F6;
+      padding: rem(30) rem(20);
+      //padding: rem(20) rem(30) rem(40);
+      border-radius: 10px;
+    }
+
+    form {
+      display: block;
+    }
+  }
+
+  &--filter {
+    padding: rem(24);
+    background-color: #F2F4F6;
+    border-radius: rem(10);
+    max-width: rem(270);
+    min-height: rem(395);
+    @include r($mobile) {
+      max-width: none;
+    }
+
+    form {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: rem(20);
+    }
+
+    &__checkbox-btn {
+      background-color: #FFFFFF !important;
+    }
+
+    &__label-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: rem(22);
+
+      svg {
+        width: rem(12);
+        height: rem(12);
+        fill: #6F8592;
+      }
+    }
+
+    &__input {
+      padding-left: rem(44);
+      padding-right: rem(44);
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: rem(24);
+      height: rem(24);
+      border-radius: 50%;
+      background-color: $green;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: rem(20);
+    }
+
+    &__btn-icon {
+      width: rem(15);
+      height: rem(15);
+      fill: $green;
+    }
+  }
+
+  &--cabinet {
+    width: 100%;
+  }
+
+  &--cabinet__label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: rem(18) rem(10) rem(18) rem(63);
+    border-radius: rem(70);
+    margin-bottom: rem(20);
+
+    &:last-of-type {
+      margin-bottom: rem(35);
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: rem(34);
+      max-width: rem(14);
+      max-height: rem(15);
+    }
+  }
+
+  &--cabinet__bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: rem(30);
+    justify-content: space-between;
+    @include r($mobile) {
+      column-gap: rem(15);
+    }
+
+    a,
+    button {
+      width: 50%;
+      max-width: rem(170);
+      @include r($mobile) {
+        max-width: rem(150);
+      }
+    }
+  }
+
+}

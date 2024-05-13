@@ -1,0 +1,60 @@
+.labs {
+  display: grid;
+  &__row {
+    display: grid;
+    grid-template-columns: minmax(35%, 1fr) minmax(25%, 1fr) minmax(40%, 1fr);
+    grid-column-gap: rem(20);
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: rem(30);
+  }
+  address {
+    display: block;
+    max-width: rem(270);
+  }
+
+  &__item {
+    max-width: rem(470);
+
+    p,
+    a {
+      font-size: rem(18);
+      font-weight: 300;
+    }
+    a {
+      display: flex;
+      margin-bottom: rem(5);
+    }
+    p {
+      margin-bottom: rem(5);
+    }
+    strong {
+      font-weight: 400;
+    }
+
+    svg {
+      width: rem(20);
+      height: rem(20);
+      margin-left: rem(14);
+    }
+  }
+
+  &__item-header {
+    font-size: rem(18);
+    font-weight: 500;
+    margin-bottom: rem(20);
+  }
+  &__item-link {
+    display: flex;
+    align-items: center;
+    svg {
+      fill: $green;
+    }
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+  }
+}

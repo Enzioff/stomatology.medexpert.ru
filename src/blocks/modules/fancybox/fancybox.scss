@@ -1,0 +1,18 @@
+.fancybox {
+  &__caption {
+    padding-left: rem(30) !important;
+    padding-right: rem(30) !important;
+  }
+
+  &__container {
+    button[data-fancybox-close] {
+      top: rem(50) !important;
+      right: rem(50) !important;
+      color: $darkGreen !important;
+      @include r($mobile) {
+        top: rem(30) !important;
+        right: rem(30) !important;
+      }
+    }
+  }
+}

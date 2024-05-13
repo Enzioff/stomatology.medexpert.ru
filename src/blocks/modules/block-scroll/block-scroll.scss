@@ -1,0 +1,13 @@
+.block-scroll {
+  @include r($mobile) {
+    overflow-x: scroll;
+    scroll-snap-type: both mandatory;
+  }
+
+  &__inner {
+    @include r($mobile) {
+      width: 200vw;
+      scroll-snap-align: center;
+    }
+  }
+}

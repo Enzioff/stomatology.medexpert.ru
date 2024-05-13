@@ -1,0 +1,41 @@
+.lab-price {
+  background-color: #E8EAEB !important;
+  padding: rem(50) !important;
+  width: 100%;
+  max-width: rem(1170) !important;
+  @include r($mobile) {
+    max-width: calc(100vw - 50px) !important;
+    padding: rem(40) rem(22) rem(30) !important;
+  }
+
+  &__title {
+    font-size: rem(32);
+    font-weight: 500;
+    margin-bottom: rem(40);
+    @include r($mobile) {
+      font-size: rem(20);
+      margin-bottom: rem(25);
+    }
+  }
+
+  &__list {
+    margin-bottom: rem(60);
+    @include r($mobile) {
+      margin-bottom: rem(30);
+    }
+
+    li {
+      margin-bottom: rem(10);
+      @include r($mobile) {
+        margin-bottom: rem(20);
+      }
+
+      &:last-child {
+        margin-bottom: rem(0);
+      }
+    }
+    b {
+      font-weight: 500;
+    }
+  }
+}

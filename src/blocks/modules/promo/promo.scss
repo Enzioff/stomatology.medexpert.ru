@@ -1,0 +1,89 @@
+.promo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 13px 54px;
+  border-radius: 10px;
+  background-color: $gray-transparent;
+  
+  @include r($mobile) {
+    padding: 32px 20px;
+  }
+  
+  &__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 615px;
+    
+  }
+  
+  &__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 57.8px;
+    
+    @include r($mobile) {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 43.35px;
+    }
+  }
+  
+  &__text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23.12px;
+  }
+  
+  &__picture {
+    display: flex;
+    flex-shrink: 0;
+    width: 374px;
+    height: 374px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    
+    @include r($mobile) {
+      display: none;
+    }
+    
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    
+    @include r($mobile) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 24px;
+      width: 100%;
+      .button {
+        width: 100%;
+      }
+    }
+  }
+  
+  &__detail {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.12px;
+    
+    span {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28.9px;
+    }
+  }
+}

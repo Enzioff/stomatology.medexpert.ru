@@ -1,0 +1,86 @@
+.button-plus {
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
+  width: rem(40);
+  height: rem(40);
+  border-radius: 50%;
+  background-color: #F2F4F6;
+  transition: all .3s ease-in-out;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(18);
+    height: rem(3);
+    border-radius: 10px;
+    background-color: $green;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(3);
+    height: rem(18);
+    border-radius: 10px;
+    background-color: $green;
+    transition: all .3s ease-in-out;
+  }
+
+  &.active {
+    &:after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+
+  &--light {
+    background-color: #FFFFFF;
+
+    &.active {
+      background-color: $green;
+
+      &:after,
+      &:before {
+        background-color: #FFFFFF;
+      }
+    }
+  }
+
+  &--small {
+    width: rem(15);
+    height: rem(15);
+    background-color: transparent;
+
+    &:before {
+      width: rem(13.5);
+      height: rem(1.5);
+      background-color: $green;
+    }
+
+    &:after {
+      width: rem(1.5);
+      height: rem(13.5);
+      background-color: $green;
+      transition: all .3s ease-in-out;
+    }
+
+    &.active {
+      &:after {
+        transform: translate(-50%, -50%) rotate(90deg);
+        background-color: $darkGreen;
+      }
+
+      &:before {
+        background-color: $darkGreen;
+      }
+    }
+  }
+}

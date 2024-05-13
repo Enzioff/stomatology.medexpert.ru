@@ -1,0 +1,126 @@
+.card-news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: rem(42) rem(40);
+  border-radius: rem(10);
+  overflow: hidden;
+  height: rem(300);
+  
+  @include r($mobile) {
+    padding: rem(50) rem(60) rem(50) rem(37);
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background: linear-gradient(115.26deg, #EAF7F7 37.07%, rgba(234, 247, 247, 0.4) 101.7%);
+    }
+  }
+
+  time {
+    display: inline-block;
+  }
+
+  &__content {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    z-index: 10;
+    @include r($mobile) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: rem(24);
+    font-weight: 500;
+    margin-bottom: rem(12);
+  }
+
+  &__decor {
+    position: absolute;
+    width: rem(250);
+    height: rem(250);
+    bottom: 0;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+    @include r($mobile) {
+      width: rem(140);
+      height: rem(140);
+      top: rem(-45);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    height: 100%;
+    width: 73%;
+    right: rem(-85);
+    z-index: 1;
+    @include r($mobile) {
+      width: auto;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &--big {
+    overflow: visible;
+   height: rem(202);
+    &:before {
+      content: none;
+    }
+    @include r($mobile) {
+      min-height: auto;
+      height: fit-content;
+      padding: rem(120) rem(37) rem(35);
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .card-news__content {
+      width: 30%;
+      height: auto;
+      @include r($mobile) {
+        width: 100%;
+        margin-bottom: rem(30);
+      }
+    }
+
+    .card-news__title {
+      @include r($mobile) {
+        font-size: rem(30);
+      }
+    }
+    button {
+      width: rem(188);
+      @include r($mobile) {
+        width: rem(146);
+      }
+    }
+  }
+  
+  p:not(.card-news__title) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}

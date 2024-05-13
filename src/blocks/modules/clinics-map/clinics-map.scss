@@ -1,0 +1,11 @@
+.clinics-map {
+  &__map {
+    height: 100%;
+    @include r($laptop-min) {
+     height: rem(350);
+    }
+    @include r($mobile) {
+      height: rem(571);
+    }
+  }
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<div class="main-container">
+  <%= htmlWebpackPlugin.options.sectionHeader %>
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__link" href="./">Главная</a>
+          <a class="breadcrumbs__link" href="./">Специалисты</a>
+          <span class="breadcrumbs__curr-page">Моисеева Екатерина Михайловна</span>
+        </div>
+      </div>
+    </section>
+    <section class="section docs-detail mb-45 mbm-35">
+      <div class="container">
+        <div class="columns">
+          <div class="columns__col-mob--12 only-mobile">
+            <h1 class="title--page fw--500">Моисеева Екатерина Михайловна</h1>
+          </div>
+          <div class="columns__col--4 columns__col-tab--4 columns__col-mob--12">
+            <picture class="docs-detail__picture">
+              <img src="assets/images/doc.jpg" alt="">
+            </picture>
+          </div>
+          <div class="columns__col--8 columns__col-tab--8 columns__col-mob--12">
+            <div class="docs-detail__card">
+              <div class="docs-detail__card-wrapper mb-60 mbm-40">
+                <h1 class="title--page fw--500 mb-15 mob-hidden">Моисеева Екатерина Михайловна</h1>
+                <div class="docs-detail__links docs-detail__links--top">
+                  <a class="link-icon" href="#">
+                    <svg class="rating__stars-icon">
+                      <use xlink:href="assets/sprite/sprite.svg#icon-bag"></use>
+                    </svg>
+                    <span>Врач-терапевт</span>
+                  </a>
+                  <a class="link-icon" href="#">
+                    <svg class="rating__stars-icon">
+                      <use xlink:href="assets/sprite/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <span>Стаж 10 лет</span>
+                  </a>
+                </div>
+              </div>
+              <div class="docs-detail__card-wrapper">
+                <div class="docs-detail__links docs-detail__links--bottom mb-30">
+                  <a class="link-icon" href="#">
+                    <svg class="rating__stars-icon">
+                      <use xlink:href="assets/sprite/sprite.svg#icon-location"></use>
+                    </svg>
+                    <span>Медэксперт на Лефорта</span>
+                  </a>
+                  <a class="link-icon" href="#">
+                    <svg class="rating__stars-icon">
+                      <use xlink:href="assets/sprite/sprite.svg#icon-location"></use>
+                    </svg>
+                    <span>Медэксперт на Пражской</span>
+                  </a>
+                </div>
+                <div class="docs-detail__card-wrapper-btns gap-30">
+                  <button class="button docs-detail__btn order-m-3" type="button">Записаться на прием</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section mb-65 mbm-70">
+      <div class="container">
+        <h2 class="title mb-20">О докторе</h2>
+        <div class="editor editor--16 fw--300">
+          <p>Повседневная практика показывает, что реализация намеченных плановых заданий влечет за собой процесс
+            внедрения и модернизации систем массового участия. Разнообразный и богатый опыт новая модель организационной
+            деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития.
+            Разнообразный
+            и богатый опыт дальнейшее развитие различных форм деятельности позволяет оценить значение соответствующий
+            условий активизации. С другой стороны укрепление и развитие структуры требуют определения и уточнения систем
+            массового участия</p>
+          <p>Повседневная практика показывает, что реализация намеченных плановых заданий влечет за собой процесс
+            внедрения и модернизации систем массового участия. Разнообразный и богатый опыт новая модель организационной
+            деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития.
+            Разнообразный
+            и богатый опыт дальнейшее развитие различных форм деятельности позволяет оценить значение соответствующий
+            условий активизации. С другой стороны укрепление и развитие структуры требуют определения и уточнения систем
+            массового участия</p>
+          <p>Повседневная практика показывает, что реализация намеченных плановых заданий влечет за собой процесс
+            внедрения и модернизации систем массового участия. Разнообразный и богатый опыт новая модель организационной
+            деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития.
+            Разнообразный
+            и богатый опыт дальнейшее развитие различных форм деятельности позволяет оценить значение соответствующий
+            условий активизации. С другой стороны укрепление и развитие структуры требуют определения и уточнения систем
+            массового участия</p>
+        </div>
+      </div>
+    </section>
+    <section class="section mb-75 mbm-105">
+      <div class="container">
+        <div class="tabs" data-tabs-container>
+          <div class="tabs__controls">
+            <p class="tabs__trigger tabs__trigger--desk active" data-tabs-trigger data-tabs="tab-1">Образование</p>
+            <p class="tabs__trigger tabs__trigger--desk" data-tabs-trigger data-tabs="tab-2">Доп. образование</p>
+            <p class="tabs__trigger tabs__trigger--desk" data-tabs-trigger data-tabs="tab-3">Направления работы</p>
+            <p class="tabs__trigger tabs__trigger--desk" data-tabs-trigger data-tabs="tab-4">Сертификаты</p>
+            <p class="tabs__trigger tabs__trigger--desk" data-tabs-trigger data-tabs="tab-5">Опыт работы</p>
+          </div>
+          <ul class="tabs__list">
+            <li class="tabs__item active" id="tab-1" data-tabs-list>
+              <ul class="tabs__item-list flex flex--column">
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Образование: </b>БФУ им. И.Канта, диплом №1039050377705, РН5940 от 06.07.2016г.
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Образование: </b>БФУ им. И.Канта, диплом №1039050377705, РН5940 от 06.07.2016г.
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Интернатура: </b>терапия, диплом ППО №017827002296, РН 1401 от 31.08.2017г., “Северо-Западный
+                    ГМУ имени И.И.Мечникова
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Терапия: </b>сертификат №1158243078010, РН8579 от 28.12.2018г., ООО «АртБизнесДирект», г.
+                    Омск
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Терапия: </b>сертификат №1158243078010, РН8579 от 28.12.2018г., ООО «АртБизнесДирект», г.
+                    Омск
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Клиническая фармакология: </b>сертификат №0139270001346, РН 11 от 30.07.2018г., БФУ им. И. Канта
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Аспирантура: </b>клиническая медицина, диплом №1039244638963, РН504 от 04.07.2021г., БФУ им.
+                    И.Канта
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="tabs__item" id="tab-2" data-tabs-list>
+              <ul class="tabs__item-list flex flex--column">
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Образование: </b>БФУ им. И.Канта, диплом №1039050377705, РН5940 от 06.07.2016г.
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Интернатура: </b>терапия, диплом ППО №017827002296, РН 1401 от 31.08.2017г., “Северо-Западный
+                    ГМУ имени И.И.Мечникова
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Терапия: </b>сертификат №1158243078010, РН8579 от 28.12.2018г., ООО «АртБизнесДирект», г.
+                    Омск
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Клиническая фармакология: </b>сертификат №0139270001346, РН 11 от 30.07.2018г., БФУ им. И. Канта
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Клиническая фармакология: </b>сертификат №0139270001346, РН 11 от 30.07.2018г., БФУ им. И. Канта
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Аспирантура: </b>клиническая медицина, диплом №1039244638963, РН504 от 04.07.2021г., БФУ им.
+                    И.Канта
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Аспирантура: </b>клиническая медицина, диплом №1039244638963, РН504 от 04.07.2021г., БФУ им.
+                    И.Канта
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="tabs__item" id="tab-3" data-tabs-list>
+              <ul class="tabs__item-list flex flex--column">
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Образование: </b>БФУ им. И.Канта, диплом №1039050377705, РН5940 от 06.07.2016г.
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Интернатура: </b>терапия, диплом ППО №017827002296, РН 1401 от 31.08.2017г., “Северо-Западный
+                    ГМУ имени И.И.Мечникова
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Терапия: </b>сертификат №1158243078010, РН8579 от 28.12.2018г., ООО «АртБизнесДирект», г.
+                    Омск
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Клиническая фармакология: </b>сертификат №0139270001346, РН 11 от 30.07.2018г., БФУ им. И. Канта
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Аспирантура: </b>клиническая медицина, диплом №1039244638963, РН504 от 04.07.2021г., БФУ им.
+                    И.Канта
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="tabs__item" id="tab-4" data-tabs-list>
+              <ul class="tabs__item-list flex flex--column">
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Образование: </b>БФУ им. И.Канта, диплом №1039050377705, РН5940 от 06.07.2016г.
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Интернатура: </b>терапия, диплом ППО №017827002296, РН 1401 от 31.08.2017г., “Северо-Западный
+                    ГМУ имени И.И.Мечникова
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Терапия: </b>сертификат №1158243078010, РН8579 от 28.12.2018г., ООО «АртБизнесДирект», г.
+                    Омск
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Клиническая фармакология: </b>сертификат №0139270001346, РН 11 от 30.07.2018г., БФУ им. И. Канта
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Аспирантура: </b>клиническая медицина, диплом №1039244638963, РН504 от 04.07.2021г., БФУ им.
+                    И.Канта
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="tabs__item" id="tab-5" data-tabs-list>
+              <ul class="tabs__item-list flex flex--column">
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Опыт работы </b>
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    БФУ им. И.Канта, диплом №1039050377705, РН5940 от 06.07.2016г.
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Образование: </b>БФУ им. И.Канта, диплом №1039050377705, РН5940 от 06.07.2016г.
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Интернатура: </b>терапия, диплом ППО №017827002296, РН 1401 от 31.08.2017г., “Северо-Западный
+                    ГМУ имени И.И.Мечникова
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Терапия: </b>сертификат №1158243078010, РН8579 от 28.12.2018г., ООО «АртБизнесДирект», г.
+                    Омск
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Клиническая фармакология: </b>сертификат №0139270001346, РН 11 от 30.07.2018г., БФУ им. И. Канта
+                  </div>
+                </li>
+                <li class="tabs__item-item flex">
+                  <div class="tabs__text">
+                    <b>Аспирантура: </b>клиническая медицина, диплом №1039244638963, РН504 от 04.07.2021г., БФУ им.
+                    И.Канта
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%= htmlWebpackPlugin.options.sectionFooter %>
+  <%= htmlWebpackPlugin.options.temp %>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+.vacancy {
+  //&__collapse {
+  //  padding: 0 rem(30);
+  //  border-radius: 5px;
+  //  -webkit-box-shadow: 0px 0px 8px 3px rgba(157, 157, 157, 0.2);
+  //  -moz-box-shadow: 0px 0px 8px 3px rgba(157, 157, 157, 0.2);
+  //  box-shadow: 0px 0px 8px 3px rgba(157, 157, 157, 0.2);
+  //}
+  //
+  //&__collapse-wrapper {
+  //  border-bottom: 1px solid #E1E5EA;
+  //  &:last-child {
+  //    border: none;
+  //  }
+  //}
+  //
+  //&__collapse-inner {
+  //  margin-top: rem(21);
+  //
+  //  p {
+  //    margin-bottom: rem(10);
+  //
+  //    &:last-child {
+  //      margin-bottom: 0;
+  //    }
+  //  }
+  //}
+  //
+  //&__collapse-item {
+  //
+  //}
+  //
+  //&__collapse-trigger {
+  //  display: flex;
+  //  align-items: center;
+  //  font-size: rem(20);
+  //
+  //}
+
+
+  &__list {
+    margin-bottom: rem(25);
+    list-style: none;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: rem(10);
+    }
+  }
+
+  &__list-item {
+    display: block;
+    position: relative;
+    margin-bottom: rem(10);
+
+    &:before {
+      content: '\2013';
+      margin-right: rem(10);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+

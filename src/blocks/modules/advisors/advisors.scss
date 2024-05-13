@@ -1,0 +1,17 @@
+.advisors {
+  &__card {
+    height: rem(345);
+  }
+
+  &__card-picture {
+    height: 100%;
+    max-height: rem(212);
+    flex-shrink: 0;
+  }
+
+  &__card-content {
+    justify-content: space-between;
+    height: 100%;
+    flex-shrink: 1;
+  }
+}

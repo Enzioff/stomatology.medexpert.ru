@@ -1,0 +1,25 @@
+.color-block {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: rem(40);
+  font-size: rem(18);
+  @include r($mobile) {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: rem(40) rem(30);
+    gap: rem(15);
+  }
+  &--pink {
+    background-color: #FFE5E5;
+    padding: rem(32) rem(40);
+    @include r($mobile) {
+      padding: rem(40) rem(30);
+      //height: rem(367);
+    }
+  }
+  &--green {
+    background-color: #E6F2F4;
+  }
+}

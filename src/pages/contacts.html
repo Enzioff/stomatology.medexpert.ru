@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<div class="main-container">
+    <%= htmlWebpackPlugin.options.sectionHeader %>
+    <main class="main">
+        <section class="section">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="./">Главная</a>
+                    <a class="breadcrumbs__link" href="./">О компании</a>
+                    <span class="breadcrumbs__curr-page">Контакты</span>
+                </div>
+            </div>
+        </section>
+        <section class="section mb-100 mbm-70">
+            <div class="container">
+                <h2 class="title mb-30 mbm-20">Медэксперт</h2>
+                <div class="flex flex--column fz--16 fw--300 mb-40">
+                    <p class="flex mb-5">ООО "МЦ "Медэксперт-5"</p>
+                    <p class="flex mb-5">Учредители: Колобухов П.В., Колобухов Д.В., Колобухова Т.П.</p>
+                    <a class="color--green" href="#">ОГРН/ИНН</a>
+                </div>
+                <div class="labs">
+                    <div class="columns">
+                        <div class="columns__col--4 columns__col-tab--6 columns__col-mob--12 mbm-5">
+                            <div class="labs__item">
+                                <div class="labs__item-header">Адрес</div>
+                                <address>
+                                    <a href="">ул. Космическая, 29</a>
+                                    <a href="">ул. Косм. Леонова, 8 - Клинико-диагностическая лаборатория</a>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="columns__col--3 columns__col-tab--6 columns__col-mob--12 mbm-5">
+                            <div class="labs__item">
+                                <div class="labs__item-header">Режим работы</div>
+                                <div class="labs__item-timetable">
+                                    <p>пн - сб: с 09:00 до 21:00</p>
+                                    <p>вс: с 10:00 до 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns__col--5 columns__col-tab--12 mbt-40 mbm-5">
+                            <div class="labs__item">
+                                <div class="labs__item-header">Главный врач</div>
+                                <a class="labs__item-link" href="mailto:">
+                                    <span>Колобухов Павел Владимирович</span>
+                                    <svg>
+                                        <use xlink:href="assets/sprite/sprite.svg#icon-mail"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns__col--4 columns__col-tab--6 columns__col-mob--12 mbm-15">
+                            <div class="labs__item">
+                                <div class="labs__item-header">Контакты</div>
+                                <a class="link link--green-dot" href="tel:+74012519000">8 (4012) 51-90-00</a>
+                                <a href="mailto:office@mdx39.ru">mailto:office@mdx39.ru</a>
+                            </div>
+                        </div>
+                        <div class="columns__col--3 columns__col-tab--6 columns__col-mob--12 mbm-5">
+                            <div class="labs__item">
+                                <div class="labs__item-header">Приём анализов</div>
+                                <div class="labs__item-timetable">
+                                    <p>пн - сб: с 09:00 до 21:00</p>
+                                    <p>вс: с 10:00 до 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns__col--5 columns__col-tab--12 mbt-40 mbm-5">
+                            <div class="labs__item">
+                                <div class="labs__item-header">Дополнительная информация</div>
+                                <p>Патоморфологическая лаборатория (цитология и гистология, анализ спермы) -
+                                    <strong>8 (4012) 51-90-00</strong>
+                                </p>
+                                <p>ПЦР-лаборатория -
+                                    <strong>8 (4012) 51-90-00, доб 2203</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%= htmlWebpackPlugin.options.sectionFooter %>
+    <%= htmlWebpackPlugin.options.temp %>
+</div>
+</body>
+</html>

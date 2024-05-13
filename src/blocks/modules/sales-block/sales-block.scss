@@ -1,0 +1,63 @@
+.sales-block {
+
+  &__article {
+    padding: rem(40) rem(100) rem(40) rem(40);
+    //height: rem(330);
+
+    @include rmin(992) {
+      padding: rem(40) rem(157) rem(40) rem(40);
+    }
+    @include r($mobile) {
+      padding: rem(45) rem(50) rem(35) rem(18);
+      //height: rem(240);
+    }
+  }
+
+
+  &__title {
+    color: $green;
+    font-size: rem(32);
+    line-height: 1.1;
+    font-weight: 500;
+    margin-bottom: rem(20);
+    @include r($mobile) {
+      font-size: rem(18);
+      line-height: 1.4;
+      margin-bottom: rem(15);
+    }
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: rem(20);
+    line-height: 1.5;
+    @include r($mobile) {
+      font-size: rem(14);
+    }
+
+    p {
+      margin-bottom: rem(15);
+      @include r($mobile) {
+        margin-bottom: rem(10);
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: rem(16);
+    letter-spacing: 0.1em;
+    margin-top: auto;
+
+    svg {
+      width: rem(17);
+      height: rem(17);
+      fill: $green;
+      margin-left: rem(10);
+    }
+  }
+
+}

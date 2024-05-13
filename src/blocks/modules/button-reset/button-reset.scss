@@ -1,0 +1,15 @@
+.button-reset {
+  font-size: rem(14);
+  color: $green;
+  padding: rem(10);
+  border-radius: 10px;
+  &:hover {
+    svg {
+      transform: rotate(75deg);
+    }
+  }
+  &__icon {
+    width: rem(14);
+    height: rem(14);
+  }
+}

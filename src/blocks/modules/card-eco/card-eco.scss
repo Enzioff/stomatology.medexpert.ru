@@ -1,0 +1,325 @@
+.card-eco {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: rem(50) rem(40);
+  height: rem(300);
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+  @include r($mobile) {
+    padding: rem(30);
+    height: rem(327);
+  }
+
+  &:hover {
+    .card-eco__icon:before,
+    .card-eco__icon:after {
+      animation-name: scale;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .card-eco__icon {
+      transform: scale(1.1);
+    }
+
+    .card-eco__bottom-tooltip {
+      opacity: 1;
+    }
+
+    time {
+      opacity: 0;
+      pointer-events: none;
+      @include r($mobile) {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  }
+
+  &__icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: rem(-75);
+    left: rem(20);
+    max-height: rem(120);
+    transition: all .3s ease-in-out;
+    @include r($mobile) {
+      position: absolute;
+      bottom: rem(-5);
+      right: -63%;
+    }
+
+    svg {
+      position: relative;
+      z-index: 3;
+      @include r($mobile) {
+        transform: scale(.65);
+      }
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: rem(347);
+      height: rem(347);
+      border-radius: 50%;
+      z-index: 0;
+      @include r($mobile) {
+        width: rem(256);
+        height: rem(256);
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: rem(225);
+      height: rem(225);
+      border-radius: 50%;
+      z-index: 1;
+      @include r($mobile) {
+        width: rem(157);
+        height: rem(157);
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem(32);
+    font-weight: 500;
+    margin-bottom: rem(25);
+    @include r($mobile) {
+      margin-bottom: rem(5);
+      font-size: rem(30);
+    }
+  }
+
+  &__text {
+    max-width: rem(276);
+    @include r($mobile) {
+      margin-bottom: rem(10);
+      min-width: rem(275);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+
+    time {
+      font-weight: 400;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    bottom: rem(30);
+    right: rem(40);
+    z-index: 5;
+    @include r($mobile) {
+      right: auto;
+      left: rem(30);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    //justify-content: space-between;
+    @include r($mobile) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      row-gap: rem(50);
+    }
+  }
+
+  &__bottom-tooltip {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: opacity .3s ease-in-out;
+    @include r($mobile) {
+      opacity: 1;
+      pointer-events: auto;
+      position: relative;
+    }
+  }
+
+  &--wide__bottom {
+    position: absolute;
+    bottom: rem(0);
+    width: calc(100% - 80px);
+  }
+
+  &--wide {
+    height: rem(185);
+    padding: rem(30) rem(40);
+    @include r($mobile) {
+      height: rem(327);
+      padding: rem(30);
+    }
+
+    &:hover {
+      time {
+        opacity: 1;
+      }
+    }
+
+    .card-eco__icon {
+      top: rem(33);
+      left: rem(-298);
+      @include r($mobile) {
+        top: 68%;
+        left: rem(20);
+      }
+
+      svg {
+        @include r($mobile) {
+          transform: scale(0.5);
+        }
+      }
+    }
+
+    .card-eco__icon:after {
+      width: rem(320);
+      height: rem(320);
+      @include r($mobile) {
+        width: rem(157);
+        height: rem(157);
+      }
+    }
+
+    .card-eco__icon:before {
+      width: rem(494);
+      height: rem(494);
+      @include r($mobile) {
+        width: rem(256);
+        height: rem(256);
+      }
+    }
+
+    .card-eco__title {
+      margin-bottom: rem(5);
+    }
+  }
+
+  &--tel {
+    background-color: #F2F4F6;
+
+    .card-eco__icon svg {
+      width: rem(100);
+      height: rem(100);
+    }
+
+    .card-eco__icon:after {
+      background-color: #548CF6;
+    }
+
+    .card-eco__icon:before {
+      background-color: #DEECF4;
+    }
+  }
+
+  &--telegram {
+    background-color: #E8F6FD;
+
+    .card-eco__icon svg {
+      width: rem(110);
+      height: rem(90);
+    }
+
+    .card-eco__icon:after {
+      background-color: #2AA1DD;
+    }
+
+    .card-eco__icon:before {
+      background-color: #D5EEFA;
+    }
+  }
+
+  &--viber {
+    background-color: #DFD5EC;
+
+    .card-eco__icon svg {
+      width: rem(100);
+      height: rem(115);
+    }
+
+    .card-eco__icon:after {
+      background-color: #864CB2;
+    }
+
+    .card-eco__icon:before {
+      background-color: #D6C8E7;
+    }
+  }
+
+  &--callback {
+    background-color: #EDF8E9;
+
+    .card-eco__icon svg {
+      width: rem(80);
+      height: rem(80);
+    }
+
+    .card-eco__icon:after {
+      background-color: #4DBB26;
+    }
+
+    .card-eco__icon:before {
+      background-color: #DEF3D6;
+    }
+  }
+
+  &--vk {
+    background-color: #CCE3FD;
+
+    .card-eco__icon svg {
+      width: rem(105);
+      height: rem(70);
+    }
+
+    .card-eco__icon:after {
+      background-color: #548CF6;
+    }
+
+    .card-eco__icon:before {
+      background-color: #C0DBFD;
+    }
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: translate(-50%, -50%) scale(1)
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(1.1)
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1.2)
+  }
+  90% {
+    transform: translate(-50%, -50%) scale(1.1)
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1)
+  }
+}

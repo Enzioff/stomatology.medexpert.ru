@@ -1,0 +1,121 @@
+.list {
+  list-style: none;
+
+  &--dots li:before {
+    content: '\B7';
+    position: relative;
+    left: rem(-10);
+  }
+
+  &--dots li {
+      //padding-left: rem(25);
+  }
+
+  &--line li:before {
+    content: '\2013';
+  }
+
+  &--mark {
+    font-size: rem(20);
+    @include r($mobile) {
+      font-size: rem(16);
+    }
+
+    li {
+      position: relative;
+      padding-left: rem(35);
+      margin-bottom: rem(13);
+      line-height: 1.6;
+      @include r($mobile) {
+
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    li:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: rem(8);
+      margin-right: rem(12);
+      width: rem(10);
+      height: rem(10);
+      background-image: url("../assets/images/icon-done.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      @include r($mobile) {
+
+      }
+    }
+  }
+
+  &--alph {
+    list-style: none;
+    column-count: 4;
+    @include r($laptop-min) {
+      column-count: 3;
+    }
+    @include r($mobile) {
+      column-count: auto;
+      columns: rem(285);
+    }
+
+    ul {
+      padding-top: rem(25);
+      @include r($mobile) {
+        padding-top: rem(17);
+      }
+    }
+
+    li {
+      margin-bottom: rem(14);
+      transition: all .3s ease-in-out;
+      @include r($mobile) {
+        margin-bottom: rem(10);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    & > li {
+      page-break-inside: avoid;
+      break-inside: avoid;
+      font-size: rem(20);
+      font-weight: 400;
+      margin-bottom: rem(30);
+      @include r($mobile) {
+        margin-bottom: rem(30);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    & > li:before {
+      content: attr(data-letter);
+      font-size: rem(24);
+      font-weight: 600;
+      color: $green;
+      @include r($mobile) {
+        font-size: rem(20);
+      }
+    }
+
+    & > li > ul > li {
+      cursor: pointer;
+    }
+
+    & > li > ul > li:hover {
+      color: $green;
+    }
+  }
+}
+

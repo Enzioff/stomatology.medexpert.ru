@@ -1,0 +1,32 @@
+.article-offr {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: rem(374);
+  border-radius: rem(10);
+  overflow: hidden;
+  padding: rem(35);
+  &__content {
+    position: relative;
+    z-index: 2;
+    max-width: 70%;
+  }
+  &__title {
+    color: #007C8E;
+    font-size: rem(32);
+    line-height: 1.1;
+    font-weight: 500;
+    margin-bottom: rem(17);
+  }
+  &__info {
+    font-size: rem(20);
+  }
+  &__bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,52 @@
+.card-search {
+  border-radius: 10px;
+  padding-bottom: rem(1);
+  margin-bottom: rem(30);
+
+  &:hover {
+    background-color: #F2F4F6;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(35) rem(60);
+    border-bottom: 2px solid #DBE2EA;
+    @include r($mobile) {
+      padding: rem(23);
+    }
+  }
+  &__content-wrapper {
+    @include r($mobile) {
+      padding: 0 rem(23) rem(30);
+    }
+  }
+
+  &__content {
+    padding: rem(30) rem(60) 0;
+    margin-bottom: rem(65);
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    @include r($mobile) {
+      padding: rem(23) 0 0;
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__btn {
+    padding: rem(13.5) rem(70) !important;
+  }
+
+  p + p {
+    margin-top: rem(15);
+  }
+
+  b {
+    color: #EF7F1A;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,92 @@
+.address {
+  background: $light;
+  box-shadow: 10px 10px 30px rgba(55, 63, 63, 0.25);
+  border-radius: rem(10);
+  overflow: hidden;
+
+  &--no-shadow {
+    @include r($mobile) {
+      box-shadow: none;
+    }
+  }
+
+  &__list {
+    height: rem(380);
+    overflow-y: scroll;
+    scrollbar-face-color: $green;
+    scrollbar-track-color: #F2F4F6;
+    padding: 0 rem(35);
+    margin-right: rem(5);
+
+    @include r($mobile) {
+      height: rem(425);
+      padding: rem(30) rem(32) 0;
+      margin-right: rem(18);
+      margin-top: rem(10);
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $green;
+      border-radius: 10px
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #F2F4F6
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(25);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-title {
+    font-size: rem(20);
+    font-weight: 500;
+    margin-bottom: rem(10);
+    @include r($mobile) {
+      font-size: rem(18);
+    }
+  }
+
+  &__item-text {
+    display: block;
+    font-size: rem(14);
+    line-height: 1.4;
+    font-weight: 300;
+    margin-bottom: rem(10);
+  }
+
+  &__item-tel {
+    display: block;
+    font-size: rem(14);
+    font-weight: 500;
+  }
+
+  &__map {
+    margin-left: rem(-23);
+
+    iframe {
+      min-height: rem(450);
+    }
+
+    @include r($mobile) {
+      margin-left: 0;
+      height: rem(571);
+    }
+  }
+  &__map--min {
+    @include r($mobile) {
+     min-height: auto;
+      height: rem(345);
+    }
+  }
+
+}

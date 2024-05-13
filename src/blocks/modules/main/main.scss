@@ -1,0 +1,33 @@
+.main {
+    flex: 1 1 auto;
+    width: 100%;
+    margin-top: rem(157);
+    //margin-top: rem(165);
+    @include r($laptop-min) {
+        margin-top: rem(178);
+    }
+    @include r($mobile) {
+        margin-top: rem(20);
+    }
+    &--has-intro {
+        margin-top: rem(136);
+        @include r($laptop-min) {
+            margin-top: rem(146);
+        }
+        @include r($mobile) {
+            margin-top: rem(-7);
+        }
+    }
+    &--index {
+        margin-top: rem(165);
+        @include r($mobile) {
+            margin-top: 0;
+        }
+    }
+    &--no-header {
+        margin-top: 0;
+    }
+    &--lk {
+        height: 100vh;
+    }
+}

@@ -1,0 +1,22 @@
+.card-price-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+  gap: rem(20);
+  &+& {
+    margin-top: rem(15);
+  }
+  &__text {
+    font-size: rem(16);
+    font-weight: 300;
+  }
+  &__text-big {
+    font-size: rem(20);
+    font-weight: 400;
+  }
+  &__text-big-bold {
+    font-size: rem(20);
+    font-weight: 600;
+  }
+}

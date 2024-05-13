@@ -1,0 +1,77 @@
+.fz {
+  &--12 {
+    font-size: rem(12);
+  }
+  &--14 {
+    font-size: rem(14);
+  }
+  &--16 {
+    font-size: rem(16);
+  }
+  &--18 {
+    font-size: rem(18);
+  }
+  &--20 {
+    font-size: rem(20);
+  }
+  &--22 {
+    font-size: rem(22);
+  }
+  &--24 {
+    font-size: rem(24);
+  }
+  &--28 {
+    font-size: rem(28);
+  }
+  &--32 {
+    font-size: rem(32);
+  }
+}
+
+.fzm {
+  &--12 {
+    @include r($mobile) {
+      font-size: rem(12);
+    }
+  }
+  &--14 {
+    @include r($mobile) {
+      font-size: rem(14);
+    }
+  }
+  &--16 {
+    @include r($mobile) {
+      font-size: rem(16);
+    }
+  }
+  &--18 {
+    @include r($mobile) {
+      font-size: rem(18);
+    }
+  }
+  &--20 {
+    @include r($mobile) {
+      font-size: rem(20);
+    }
+  }
+  &--22 {
+    @include r($mobile) {
+      font-size: rem(22);
+    }
+  }
+  &--24 {
+    @include r($mobile) {
+      font-size: rem(24);
+    }
+  }
+  &--28 {
+    @include r($mobile) {
+      font-size: rem(28);
+    }
+  }
+  &--32 {
+    @include r($mobile) {
+      font-size: rem(32);
+    }
+  }
+}

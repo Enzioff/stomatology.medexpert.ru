@@ -1,0 +1,15 @@
+.icon {
+  &--small {
+    width: rem(20);
+    height: rem(23);
+    fill: $green;
+  }
+
+  &--big {
+    svg {
+      min-width: rem(100);
+      max-width: 100%;
+      height: rem(70);
+    }
+  }
+}

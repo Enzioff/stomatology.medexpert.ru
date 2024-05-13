@@ -1,0 +1,62 @@
+.checkbox {
+  &--square {
+    display: flex;
+    align-items: center;
+    gap: rem(25);
+    cursor: pointer;
+    margin-bottom: rem(20);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    input {
+      display: block;
+      width: rem(26);
+      height: rem(26);
+      border-radius: 5px;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      background-color: #F2F4F6;
+      position: relative;
+      flex-shrink: 0;
+      transition: all 0.3s linear;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem(14);
+        height: rem(14);
+        border-radius: 5px;
+        background-color: $green;
+        opacity: 0;
+      }
+    }
+
+    input:checked {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &--square-agreement {
+    @include r($mobile) {
+      gap: rem(17);
+    }
+
+    input {
+      @include r($mobile) {
+        background-color: #FFFFFF;
+      }
+    }
+  }
+
+  &--switch {
+
+  }
+}

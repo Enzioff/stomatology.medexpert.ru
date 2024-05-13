@@ -1,0 +1,44 @@
+.services {
+  &__article {
+    padding: rem(30);
+    border-radius: rem(10);
+    height: rem(240);
+    @include r($mobile) {
+      padding-bottom: rem(42);
+      height: auto;
+    }
+  }
+
+  &__picture {
+    width: rem(60);
+    height: rem(60);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: rem(20);
+    @include r($mobile) {
+
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: rem(20);
+    font-weight: 500;
+    margin-bottom: rem(10);
+    @include r($mobile) {
+      margin-bottom: rem(17);
+    }
+  }
+
+  &__info p {
+    font-size: rem(16);
+    font-weight: 300;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}

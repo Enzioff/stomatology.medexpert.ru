@@ -1,0 +1,104 @@
+.article-faq {
+  display: flex;
+  flex-direction: column;
+  
+  &.active {
+    .article-faq__button {
+      transform: rotate(90deg);
+    }
+    .article-faq__body {
+      grid-template-rows: 1fr;
+    }
+  }
+  
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 21px 18px;
+    background-color: $gray-transparent;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  &__title,
+  &__head {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28.9px;
+    color: $darkGreen;
+  }
+  
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    background-color: $green;
+  }
+  
+  &__icon {
+    display: flex;
+    width: 12px;
+    height: 12px;
+    fill: $light;
+  }
+  
+  &__body {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: .2s linear;
+  }
+  
+  &__wrapper {
+    min-height: 0;
+  }
+  
+  &__element {
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #E8EAEC;
+    }
+  }
+  
+  &__head {
+    padding: 24px 18px;
+    color: $green;
+    border-bottom: 1px solid #E8EAEC;
+    
+    @include r($mobile) {
+      padding: 24px 4px;
+    }
+  }
+  
+  &__item {
+    padding-right: 56px;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #E8EAEC;
+    }
+    
+    @include r($mobile) {
+      padding: 0;
+    }
+  }
+  
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.01px;
+    text-align: left;
+    color: $darkGreen;
+    span {
+      padding: 18px;
+      @include r($mobile) {
+        padding: 18px 4px;
+      }
+    }
+  }
+}

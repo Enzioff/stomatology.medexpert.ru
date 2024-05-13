@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<div class="main-container">
+  <%= htmlWebpackPlugin.options.sectionHeader %>
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__link" href="./">Главная</a>
+          <span class="breadcrumbs__curr-page">404</span>
+        </div>
+      </div>
+    </section>
+    <section class="section mb-40 mbm-185">
+      <div class="container">
+        <div class="not-found">
+          <picture class="not-found__picture">
+            <img src="./assets/images/not-found.png" alt="">
+          </picture>
+          <div class="not-found__content">
+            <p class="fz--18 fw--500 mb-20">Упс! Похоже, мы не можем найти нужную вам страницу</p>
+            <div class="flex gap-15">
+              <a class="button button--190" href="#">Вернуться назад</a>
+              <a class="button button--empty button--190" href="./">На главную</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%= htmlWebpackPlugin.options.sectionFooter %>
+  <%= htmlWebpackPlugin.options.temp %>
+</div>
+</body>
+</html>

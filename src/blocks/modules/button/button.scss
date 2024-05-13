@@ -1,0 +1,142 @@
+.button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  max-width: 100%;
+  height: fit-content;
+  white-space: nowrap;
+  background-color: $green;
+  padding: rem(13.5) rem(30);
+  color: $light;
+  font-weight: 600;
+  border-radius: rem(30);
+  flex-shrink: 0;
+  //gap: rem(10);
+
+  &:hover {
+    background-color: $darkGreen;
+  }
+
+  svg {
+    width: rem(15);
+    height: rem(16);
+    fill: #ffffff;
+  }
+
+
+  &.disabled,
+  &[disabled]{
+    opacity: .7;
+    pointer-events: none;
+  }
+
+  &--wide {
+    padding-left: rem(34.5);
+    padding-right: rem(34.5);
+    @include r($laptop-min) {
+      padding: rem(15) rem(18.5);
+    }
+    @include r($mobile) {
+      font-size: rem(12);
+    }
+  }
+
+  &--empty {
+    background-color: transparent;
+    outline: 1px solid #007A8F;
+    color: #007A8F;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: #FFFFFF;
+      background-color: $green;
+    }
+
+  }
+
+  &--dark {
+    background-color: $darkGreen;
+  }
+
+  &--gray {
+    background-color: #6E7677;
+  }
+  &--darkgray {
+    background-color: #2E2E2E;
+  }
+
+  &--review {
+    background-color: transparent;
+    justify-content: space-between;
+    width: rem(190);
+    padding: 0;
+    @include r($mobile) {
+      width: rem(155);
+    }
+    &:hover {
+      background-color: transparent;
+      svg {
+        fill: #ffffff;
+      }
+      .button--review__circle {
+        background-color: $green;
+      }
+    }
+  }
+
+  &--review__icon {
+    width: rem(22);
+    height: rem(22);
+    flex-shrink: 0;
+    fill: $darkGreen !important;
+  }
+
+  &--review__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: rem(60);
+    height: rem(60);
+    border-radius: 50%;
+    border: 2px solid $green;
+    @include r($mobile) {
+      width: rem(50);
+      height: rem(50);
+    }
+  }
+
+  &--review__text {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: $darkGreen;
+    @include r($mobile) {
+      font-size: rem(14);
+    }
+  }
+
+  &--100 {
+    width: 100%;
+  }
+  &--245 {
+    width: rem(245);
+    height: rem(60);
+    @include r($mobile) {
+      width: fit-content;
+      height: auto;
+    }
+  }
+  &--190 {
+    width: rem(190);
+    @include r($mobile) {
+      width: auto;
+    }
+  }
+  &--h60{
+    height: rem(60);
+    @include r($mobile) {
+      height: rem(50);
+    }
+  }
+}

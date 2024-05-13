@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<div class="main-container">
+  <%= htmlWebpackPlugin.options.sectionHeader %>
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__link" href="./">Главная</a>
+          <a class="breadcrumbs__link" href="./">Акции</a>
+          <span class="breadcrumbs__curr-page">Деталка</span>
+        </div>
+      </div>
+    </section>
+    <section class="section mb-110">
+      <div class="container">
+        <h1 class="title mb-30">Протезирование</h1>
+        <div class="jobs">
+          <div class="jobs__header">
+            <h2 class="jobs__title">Львович Инна Александровна</h2>
+            <p class="jobs__detail">Главный врач, стаж 15 лет</p>
+          </div>
+          <div class="tags mb-25">
+            <a class="tag" href="#">Протезирование</a>
+            <a class="tag" href="#">Терапевтическая стоматология</a>
+          </div>
+          <div class="editor">
+            <img src="./assets/images/tooth-template.png" alt="">
+            <p>
+              Поводом к стоматологическому лечению послужило появление пролежня и болезненности в области<br/>
+              подвесной части мостовидного протеза и разрушение одного из опорных зубов.
+            </p>
+            <p>
+              Протезирование — <b>Львович Инна Александровна</b>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%= htmlWebpackPlugin.options.sectionFooter %>
+  <%= htmlWebpackPlugin.options.temp %>
+</div>
+</body>
+</html>

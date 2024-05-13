@@ -1,0 +1,157 @@
+.slider {
+  position: relative;
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    left: 72px;
+    z-index: 998;
+  }
+  &__pagination--card {
+    @include r($mobile) {
+      left: rem(25);
+      bottom: rem(25);
+    }
+  }
+
+  .bullet {
+    display: block;
+    cursor: pointer;
+    background-color: $light;
+    width: rem(10);
+    height: rem(10);
+    border-radius: 70px;
+    margin-right: 7px;
+    transition: width .3s ease-in-out;
+  }
+
+  .bullet--active {
+    background-color: $green;
+    width: rem(20);
+    border-radius: rem(30);
+  }
+
+  &__pagination--sales-block {
+    display: none;
+    visibility: hidden;
+    top: auto;
+    bottom: rem(-30);
+    left: 0;
+    @include r($laptop-min) {
+      display: flex;
+      visibility: visible;
+      bottom: rem(-25);
+    }
+
+    .bullet {
+      background-color: #D8D8D8;
+    }
+
+    .bullet--active {
+      background-color: $green;
+    }
+
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    @include r($laptop-min) {
+      display: none;
+      visibility: hidden;
+    }
+    
+    &--inner {
+      .slider__button--next {
+        right: 10px;
+      }
+      .slider__button--prev {
+        left: 10px;
+      }
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: rem(44);
+    height: rem(44);
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 1px solid #E1E5EA;
+
+    svg {
+      width: rem(10);
+      height: rem(8);
+      fill: $darkGreen;
+    }
+
+    &:hover {
+      svg {
+        scale: 1.2;
+      }
+    }
+  }
+
+  &__button--gray {
+    background-color: #F2F4F6;
+    border: none;
+
+    &:hover {
+      svg {
+        fill: $darkGreen;
+      }
+    }
+  }
+
+  &__button--prev {
+    left: rem(-90);
+
+    svg {
+      transform: rotate(180deg);
+      transform-origin: center;
+    }
+  }
+
+  &__button--next {
+    right: rem(-90);
+  }
+  
+  &--features {
+    .swiper-slide {
+      height: auto;
+    }
+  }
+}
+.slider__main--overflow {
+  overflow: visible !important;
+  clip-path: inset(-100% 0 -100% 0);
+  @include r($laptop-min) {
+    clip-path: none;
+  }
+}
+.slider__main--overflow .slider__slide {
+  opacity: 1;
+}
+
+.slider__slide {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s opacity;
+}
+.slider__slide--visible {
+  user-select: none;
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,120 @@
+.appointment {
+  &__collapse {
+  }
+
+  &__collapse-wrapper {
+  }
+
+  &__collapse-item {
+    margin-bottom: rem(20);
+  }
+
+  &__collapse-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F4F6;
+    border-radius: 5px;
+    padding: rem(30) rem(35) !important;
+    height: rem(100);
+    line-height: 1;
+    transition: all .3s ease-in-out;
+    @include r($mobile) {
+      padding: rem(30) rem(28);
+    }
+  }
+
+  &__collapse-trigger.active {
+    background-color: $green;
+    color: #FFFFFF;
+
+    .appointment__collapse-btn {
+      display: none;
+    }
+  }
+
+  &__collapse-btn {
+    width: rem(165);
+    @include r($mobile) {
+      display: none;
+      visibility: hidden;
+      position: absolute;
+    }
+  }
+
+  &__collapse-text {
+    font-size: rem(20);
+    font-weight: 500;
+    width: 30%;
+    @include r($mobile) {
+      font-size: rem(16);
+      width: 65%;
+    }
+  }
+
+  &__collapse-price {
+    font-size: rem(24);
+    font-weight: 600;
+    @include r($mobile) {
+      font-size: rem(18);
+    }
+  }
+
+  &__collapse-icon {
+    display: none;
+    width: rem(17);
+    height: rem(11);
+    margin: 0 0 0 rem(127);
+    fill: #FFFFFF;
+  }
+
+  &__collapse-icon.active {
+    display: block;
+    @include r($mobile) {
+      display: none;
+    }
+  }
+
+  &__collapse-content {
+    background-color: #F2F4F6;
+    border-radius: 5px;
+
+    &.collapse-show {
+      margin-top: rem(20);
+    }
+  }
+
+  &__collapse-inner {
+    padding: rem(35) rem(100);
+  }
+}
+
+.appointment--inner {
+  &__collapse-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 rem(15);
+    border-bottom: 1px solid #D0DFE4;
+  }
+
+  &__collapse-text {
+    font-weight: 300
+  }
+
+  &__collapse-icon {
+    fill: $green;
+    width: rem(15);
+    height: rem(10);
+    transform: rotate(90deg);
+    transition: all .3s ease-in-out;
+  }
+
+  &__collapse-icon.active {
+    transform: rotate(270deg);
+  }
+
+  &__collapse-inner {
+    margin-top: rem(50);
+  }
+}
