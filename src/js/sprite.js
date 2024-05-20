@@ -59,6 +59,7 @@ import clinicSecond from "../assets/sprite/icon-clinic-1.svg";
 import couch from "../assets/sprite/icon-couch.svg";
 import list from "../assets/sprite/icon-list.svg";
 import play from "../assets/sprite/icon-play.svg";
+import stock from "../assets/sprite/icon-stock.svg";
 
 export default {
   diez,
@@ -122,4 +123,5 @@ export default {
   couch,
   list,
   play,
+  stock
 };

@@ -7,7 +7,7 @@
   border-radius: rem(10);
   overflow: hidden;
   height: rem(300);
-  
+
   @include r($mobile) {
     padding: rem(50) rem(60) rem(50) rem(37);
     &:before {
@@ -82,10 +82,12 @@
 
   &--big {
     overflow: visible;
-   height: rem(202);
+    height: rem(202);
+
     &:before {
       content: none;
     }
+
     @include r($mobile) {
       min-height: auto;
       height: fit-content;
@@ -108,6 +110,7 @@
         font-size: rem(30);
       }
     }
+
     button {
       width: rem(188);
       @include r($mobile) {
@@ -115,12 +118,84 @@
       }
     }
   }
-  
+
   p:not(.card-news__title) {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3; /* number of lines to show */
     line-clamp: 3;
     -webkit-box-orient: vertical;
+  }
+
+  &--stock {
+    height: auto;
+    padding: 40px;
+    @include r($mobile) {
+      padding: 20px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background: linear-gradient(90deg, rgb(242, 244, 246) 47.07%, rgba(234, 247, 247, 0.4) 79%);
+    }
+
+    .card-news__title {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 46.24px;
+      color: $green;
+
+      @include r($mobile) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+
+    .card-news__content {
+      width: 75%;
+
+      @include r($mobile) {
+        width: 100%;
+      }
+    }
+
+    .card-news__picture {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      width: 100%;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    p:not(.card-news__title) {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 5; /* number of lines to show */
+      line-clamp: 5;
+      -webkit-box-orient: vertical;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28.9px;
+
+      @include r($mobile) {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
   }
 }

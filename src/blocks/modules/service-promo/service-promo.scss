@@ -1,0 +1,97 @@
+.service-promo {
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  background-color: #E0ECF9;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0 66px 60px;
+    max-width: 530px;
+
+    @include r($mobile) {
+      padding: 51px 31px 40px;
+      max-width: 272px;
+      z-index: 1;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 46.24px;
+    color: $darkGreen;
+
+    @include r($mobile) {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28.9px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.9px;
+    color: $darkGreen;
+
+    @include r($mobile) {
+      margin-bottom: 240px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23.12px;
+    }
+  }
+
+  &__picture {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-height: 378px;
+    overflow: hidden;
+
+    @include r($mobile) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 0;
+      height: 100%;
+      max-height: 325px;
+    }
+
+    &::before {
+      position: absolute;
+      top: -55px;
+      right: -12px;
+      content: '';
+      display: flex;
+
+      width: 626px;
+      height: 626px;
+      border-radius: 50%;
+      background-color: #D1E2F4;
+      z-index: 0;
+
+      @include r($mobile) {
+        top: 0;
+        right: -72%;
+      }
+    }
+
+    img {
+      display: block;
+      margin-right: -65px;
+      object-fit: cover;
+      object-position: center;
+      z-index: 1;
+
+      @include r($mobile) {
+        top: 20px;
+      }
+    }
+  }
+}

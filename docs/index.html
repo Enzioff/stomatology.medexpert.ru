@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
@@ -14,15 +14,16 @@
 <meta name="theme-color" content="#ffffff">
 
 
-  <title>Med expert | Сеть семейных клиник</title>
+    <title>Med expert | Сеть семейных клиник</title>
 <link href="./css/main.css" rel="stylesheet"></head>
 <body class="body">
 <div class="main-container">
-  <header class="section header">
+    <header class="section header">
   <div class="header-top">
     <div class="container">
       <div class="header-top__inner">
-        <a class="tel tel--header" href="tel:+74012519000">519-000</a>
+        <span class="tel tel--header mob-hidden">ул. Пражская, 1</span>
+        <a class="tel tel--header" href="tel:+74012565579">8 (4012) 56-55-79</a>
         <form class="search-header tab-hidden" action="#" method="post" data-search>
           <label class="search-header__label" data-search-field>
             <input class="search-header__input" type="text" placeholder="Поиск по сайту">
@@ -156,477 +157,541 @@
           </ul>
         </nav>
         <div class="header__toolbar">
-          <a class="button button--wide" href="ecosystem.html">Запись на прием</a>
+          <a class="button button--wide" href="ecosystem.html">Записаться на прием</a>
         </div>
       </div>
     </div>
   </div>
 </header>
-  <main class="main main--index">
-    <section class="section  mb-50 mbm-35">
-      <div class="container container--no-padding">
-        <div class="intro-slider slider" data-slider data-slider-slides="1" data-slider-slides-tab="1"
-             data-slider-slides-mob="1">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="intro-slider__slide">
-                  <a href="#">
-                    <div class="intro-slider__content">
-                      <div class="intro-slider__content-wrapper">
-                        <p class="title title--page">Стоматология</p>
-                        <p class="title title--page">для детей и взрослых</p>
-                      </div>
-                      <p class="intro-slider__text"></p>
-                      <a href="#" class="button">Подробнее</a>
+    <main class="main main--index">
+        <section class="section  mb-50 mbm-35">
+            <div class="container container--no-padding">
+                <div class="intro-slider slider" data-slider data-slider-slides="1" data-slider-slides-tab="1"
+                     data-slider-slides-mob="1">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="intro-slider__slide">
+                                    <a href="#">
+                                        <div class="intro-slider__content">
+                                            <div class="intro-slider__content-wrapper">
+                                                <p class="title title--page">Стоматология</p>
+                                                <p class="title title--page">для детей и взрослых</p>
+                                            </div>
+                                            <p class="intro-slider__text"></p>
+                                            <a href="#" class="button">Подробнее</a>
+                                        </div>
+                                        <picture class="intro-slider__picture">
+                                            <source media="(max-width:767px)"
+                                                    srcset="assets/images/banner-intro-1-mob.jpg">
+                                            <img src="assets/images/banner-intro-1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="intro-slider__slide">
+                                    <a href="#">
+                                        <div class="intro-slider__content">
+                                            <div class="intro-slider__content-wrapper">
+                                                <p class="title title--page">Стоматология</p>
+                                                <p class="title title--page">для детей и взрослых</p>
+                                            </div>
+                                            <p class="intro-slider__text"></p>
+                                            <a href="#" class="button">Подробнее</a>
+                                        </div>
+                                        <picture class="intro-slider__picture">
+                                            <source media="(max-width:767px)"
+                                                    srcset="assets/images/banner-intro-1-mob.jpg">
+                                            <img src="assets/images/banner-intro-1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="intro-slider__slide">
+                                    <a href="#">
+                                        <div class="intro-slider__content">
+                                            <div class="intro-slider__content-wrapper">
+                                                <p class="title title--page">Стоматология</p>
+                                                <p class="title title--page">для детей и взрослых</p>
+                                            </div>
+                                            <p class="intro-slider__text"></p>
+                                            <a href="#" class="button">Подробнее</a>
+                                        </div>
+                                        <picture class="intro-slider__picture">
+                                            <source media="(max-width:767px)"
+                                                    srcset="assets/images/banner-intro-1-mob.jpg">
+                                            <img src="assets/images/banner-intro-1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <picture class="intro-slider__picture">
-                      <source media="(max-width:767px)" srcset="assets/images/banner-intro-1-mob.jpg">
-                      <img src="assets/images/banner-intro-1.jpg" alt="">
+                    <div class="slider__controls slider__controls--inner">
+                        <button class="slider__button slider__button--prev" type="button" data-slider-prev>
+                            <svg>
+                                <use xlink:href="assets/sprite/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <button class="slider__button slider__button--next" type="button" data-slider-next>
+                            <svg>
+                                <use xlink:href="assets/sprite/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="slider__pagination" data-slider-pagination></div>
+                </div>
+            </div>
+        </section>
+        <section class="section mb-75 mbm-60">
+            <div class="container">
+                <form class="search" action="#" method="post" data-form>
+                    <label class="search__label">
+                        <input class="search__input" type="text" placeholder="Поиск по сайту">
+                    </label>
+                    <button class="search__button" type="submit">
+                        <svg class="search__icon">
+                            <use xlink:href="assets/sprite/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                    <p class="search__text">Например: <span data-action="/search/index.php"
+                                                            data-search-element="общий анализ крови">общий анализ крови</span>
+                    </p>
+                </form>
+            </div>
+        </section>
+        <section class="section mb-80 mbm-75">
+            <div class="container">
+                <div class="services">
+                    <h2 class="title mb-40">Стоматология в Калининграде</h2>
+                    <div class="columns columns--gap-mob-10">
+                        <div class="columns__col--6 columns__col-tab--6 columns__col-mob--12">
+                            <div class="services__article" style="background-color: #E0ECF9">
+                                <picture class="services__picture">
+                                    <img src="assets/images/cat-1.jpg" alt="">
+                                </picture>
+                                <div class="services__title">Пародонтология и гигиена</div>
+                                <div class="services__info">
+                                    <p>Разнообразный и богатый опыт рамки и место обучения кадров способствует
+                                        подготовки и реализации
+                                        новых предложений.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns__col--3 columns__col-tab--6 columns__col-mob--12">
+                            <div class="services__article" style="background-color: #F9EFE0">
+                                <picture class="services__picture">
+                                    <img src="assets/images/cat-2.jpg" alt="">
+                                </picture>
+                                <div class="services__title">Имплантация</div>
+                                <div class="services__info">
+                                    <p>Разнообразный и богатый опыт рамки и место обучения кадров способствует </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns__col--3 columns__col-tab--6 columns__col-mob--12">
+                            <div class="services__article" style="background-color: #F6E9E9">
+                                <picture class="services__picture">
+                                    <img src="assets/images/cat-3.jpg" alt="">
+                                </picture>
+                                <div class="services__title">Протезирование</div>
+                                <div class="services__info">
+                                    <p>Разнообразный и богатый опыт рамки и место обучения кадров способствует </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns__col--3 columns__col-tab--6 columns__col-mob--12">
+                            <div class="services__article" style="background-color: #F5E9F6">
+                                <picture class="services__picture">
+                                    <img src="assets/images/cat-4.jpg" alt="">
+                                </picture>
+                                <div class="services__title">Хирургия</div>
+                                <div class="services__info">
+                                    <p>Разнообразный и богатый опыт рамки и место обучения кадров способствует </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns__col--3 columns__col-tab--6 columns__col-mob--12">
+                            <div class="services__article" style="background-color: #F6F6E9">
+                                <picture class="services__picture">
+                                    <img src="assets/images/cat-5.jpg" alt="">
+                                </picture>
+                                <div class="services__title">Детская стоматология</div>
+                                <div class="services__info">
+                                    <p>Разнообразный и богатый опыт рамки и место обучения кадров способствует </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns__col--6 columns__col-tab--6 columns__col-mob--12">
+                            <div class="services__article" style="background-color: #E0E5F9">
+                                <picture class="services__picture">
+                                    <img src="assets/images/cat-6.jpg" alt="">
+                                </picture>
+                                <div class="services__title">Терапевтическая стоматология</div>
+                                <div class="services__info">
+                                    <p>Разнообразный и богатый опыт рамки и место обучения кадров способствует
+                                        подготовки и реализации
+                                        новых предложений.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--gray section--about">
+            <div class="container">
+                <div class="about-clinic">
+                    <div class="about-clinic__intro">
+                        <div class="about-clinic__info">
+                            <h2 class="title">О клинике</h2>
+                            <p class="about-clinic__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium
+                                doloremque laudantium,
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae dicta
+                                sunt
+                                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                sed quia
+                                consequuntur
+                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                                dolorem ipsum
+                                quia
+                                dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                                incidunt ut labore
+                                et
+                                dolore magnam aliquam quaerat voluptatem.</p>
+                        </div>
+                        <picture class="about-clinic__picture">
+                            <img src="./assets/images/about-teeth.jpg" alt="">
+                        </picture>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section section--features mb-110">
+            <div class="container">
+                <div class="slider slider--features mb-30" data-slider data-looped="false" data-slider-slides="4">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <article class="article-feature">
+                                    <picture class="article-feature__picture">
+                                        <img src="./assets/images/icon-headphones.svg" alt="">
+                                    </picture>
+                                    <h3 class="article-feature__title">Бесплатная консультация</h3>
+                                    <p class="article-feature__text">Мы предлагаем гибкий и бесплатный график встреч,
+                                        чтобы вам было удобно
+                                        обратиться.</p>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="article-feature">
+                                    <picture class="article-feature__picture">
+                                        <img src="./assets/images/icon-star-circle.svg" alt="">
+                                    </picture>
+                                    <h3 class="article-feature__title">Высокий рейтинг пользователей</h3>
+                                    <p class="article-feature__text">Мы предлагаем новейшие методы и материалы для
+                                        восстановления поврежденных
+                                        зубов.</p>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="article-feature">
+                                    <picture class="article-feature__picture">
+                                        <img src="./assets/images/icon-chair.svg" alt="">
+                                    </picture>
+                                    <h3 class="article-feature__title">Лучшее оборудование</h3>
+                                    <p class="article-feature__text">Наша команда стремится сделать ваш визит к
+                                        стоматологу максимально
+                                        комфортным и без стресса.</p>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="article-feature">
+                                    <picture class="article-feature__picture">
+                                        <img src="./assets/images/icon-stethoscope.svg" alt="">
+                                    </picture>
+                                    <h3 class="article-feature__title">Эксперт-стоматолог</h3>
+                                    <p class="article-feature__text">Наша команда опытных стоматологов и стоматологов
+                                        имеет многолетний опыт
+                                        работы в различных областях стоматологии.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="button centered">Наши работы</a>
+            </div>
+        </section>
+        <section class="section mb-85 mbm-100">
+            <div class="container">
+                <h3 class="title mb-40">Врачи-стоматологи</h3>
+                <div class="slider slider--about" data-slider data-slider-slides="4">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="card card--md" href="#">
+                                    <picture class="card__picture">
+                                        <img src="assets/images/doc.jpg" alt="">
+                                    </picture>
+                                    <div class="card__content">
+                                        <div class="card__title">
+                                            <p>Львович</p>
+                                            <p>Инна Александровна</p>
+                                        </div>
+                                        <div class="card__text">
+                                            <p>Нефролог</p>
+                                        </div>
+                                        <div class="card__text-accent">
+                                            <p>Стаж 15 лет</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card card--md" href="#">
+                                    <picture class="card__picture">
+                                        <img src="assets/images/doc-2.jpg" alt="">
+                                    </picture>
+                                    <div class="card__content">
+                                        <div class="card__title">
+                                            <p>Львович</p>
+                                            <p>Инна Александровна</p>
+                                        </div>
+                                        <div class="card__text">
+                                            <p>Нефролог</p>
+                                        </div>
+                                        <div class="card__text-accent">
+                                            <p>Стаж 15 лет</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card card--md" href="#">
+                                    <picture class="card__picture">
+                                        <img src="assets/images/doc.jpg" alt="">
+                                    </picture>
+                                    <div class="card__content">
+                                        <div class="card__title">
+                                            <p>Львович</p>
+                                            <p>Инна Александровна</p>
+                                        </div>
+                                        <div class="card__text">
+                                            <p>Нефролог</p>
+                                        </div>
+                                        <div class="card__text-accent">
+                                            <p>Стаж 15 лет</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="card card--md" href="#">
+                                    <picture class="card__picture">
+                                        <img src="assets/images/doc.jpg" alt="">
+                                    </picture>
+                                    <div class="card__content">
+                                        <div class="card__title">
+                                            <p>Львович</p>
+                                            <p>Инна Александровна</p>
+                                        </div>
+                                        <div class="card__text">
+                                            <p>Нефролог</p>
+                                        </div>
+                                        <div class="card__text-accent">
+                                            <p>Стаж 15 лет</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__controls">
+                        <button class="slider__button slider__button--prev" type="button" data-slider-prev>
+                            <svg>
+                                <use xlink:href="assets/sprite/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <button class="slider__button slider__button--next" type="button" data-slider-next>
+                            <svg>
+                                <use xlink:href="assets/sprite/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section mb-85 mbm-100">
+            <div class="container">
+                <h3 class="title mb-40">Отзывы</h3>
+                <div class="slider" data-slider data-slider-slides="3">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <article class="card card--review">
+                                    <div class="card__content card--no-padding">
+                                        <div class="card__title">Евгения</div>
+                                        <div class="card__text card__text--14 card__text-lc card__text-lc--11">
+                                            <p>Хочу выразить благодарность замечательному неврологу, профессионалу
+                                                своего дела. Меня давно
+                                                мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне.
+                                                Она назначила
+                                                мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне.
+                                                Она назначила
+                                                анализы, подобрала лечение. переживала за меня, беспокоилась. Все
+                                                помогло и быстро! Очень
+                                                внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо
+                                                Вам огромное за
+                                                внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо
+                                                Вам огромное за
+                                                помощь, за поддержку, за образец высокого звания Врач. С глубоким
+                                                уважением, Евгения.</p>
+                                        </div>
+                                        <div class="card__bottom card__bottom--line">
+                                            <address class="review-card__address mb-10">
+                                                <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт
+                                                    на Иванникова</a>
+                                            </address>
+                                            <p class="card__bottom-text--accent">Иваненко Людмила Борисовна</p>
+                                            <p class="card__bottom-text">Нефролог</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="card card--review">
+                                    <div class="card__content card--no-padding">
+                                        <div class="card__title">Евгения</div>
+                                        <div class="card__text card__text--14 card__text-lc card__text-lc--11">
+                                            <p>Хочу выразить благодарность замечательному неврологу, профессионалу
+                                                своего дела. Меня давно
+                                                мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне.
+                                                Она назначила
+                                                мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне.
+                                                Она назначила
+                                                анализы, подобрала лечение. переживала за меня, беспокоилась. Все
+                                                помогло и быстро! Очень
+                                                внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо
+                                                Вам огромное за
+                                                внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо
+                                                Вам огромное за
+                                                помощь, за поддержку, за образец высокого звания Врач. С глубоким
+                                                уважением, Евгения.</p>
+                                        </div>
+                                        <div class="card__bottom card__bottom--line">
+                                            <address class="review-card__address mb-10">
+                                                <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт
+                                                    на Иванникова</a>
+                                            </address>
+                                            <p class="card__bottom-text--accent">Иваненко Людмила Борисовна</p>
+                                            <p class="card__bottom-text">Нефролог</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="card card--review">
+                                    <div class="card__content card--no-padding">
+                                        <div class="card__title">Евгения</div>
+                                        <div class="card__text card__text--14 card__text-lc card__text-lc--11">
+                                            <p>Хочу выразить благодарность замечательному неврологу, профессионалу
+                                                своего дела. Меня давно
+                                                мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне.
+                                                Она назначила
+                                                мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне.
+                                                Она назначила
+                                                анализы, подобрала лечение. переживала за меня, беспокоилась. Все
+                                                помогло и быстро! Очень
+                                                внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо
+                                                Вам огромное за
+                                                внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо
+                                                Вам огромное за
+                                                помощь, за поддержку, за образец высокого звания Врач. С глубоким
+                                                уважением, Евгения.</p>
+                                        </div>
+                                        <div class="card__bottom card__bottom--line">
+                                            <address class="review-card__address mb-10">
+                                                <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт
+                                                    на Иванникова</a>
+                                            </address>
+                                            <p class="card__bottom-text--accent">Иваненко Людмила Борисовна</p>
+                                            <p class="card__bottom-text">Нефролог</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="card card--review">
+                                    <div class="card__content card--no-padding">
+                                        <div class="card__title">Евгения</div>
+                                        <div class="card__text card__text--14 card__text-lc card__text-lc--11">
+                                            <p>Хочу выразить благодарность замечательному неврологу, профессионалу
+                                                своего дела. Меня давно
+                                                мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне.
+                                                Она назначила
+                                                мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне.
+                                                Она назначила
+                                                анализы, подобрала лечение. переживала за меня, беспокоилась. Все
+                                                помогло и быстро! Очень
+                                                внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо
+                                                Вам огромное за
+                                                внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо
+                                                Вам огромное за
+                                                помощь, за поддержку, за образец высокого звания Врач. С глубоким
+                                                уважением, Евгения.</p>
+                                        </div>
+                                        <div class="card__bottom card__bottom--line">
+                                            <address class="review-card__address mb-10">
+                                                <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт
+                                                    на Иванникова</a>
+                                            </address>
+                                            <p class="card__bottom-text--accent">Иваненко Людмила Борисовна</p>
+                                            <p class="card__bottom-text">Нефролог</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__controls">
+                        <button class="slider__button slider__button--prev" type="button" data-slider-prev>
+                            <svg>
+                                <use xlink:href="assets/sprite/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <button class="slider__button slider__button--next" type="button" data-slider-next>
+                            <svg>
+                                <use xlink:href="assets/sprite/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section mb-110">
+            <div class="container">
+                <div class="service-promo">
+                    <div class="service-promo__info">
+                        <h2 class="service-promo__title">Акционный баннер</h2>
+                        <p class="service-promo__text">
+                            Напишите свой отзыв и помогите другим пациентам найти своего врача, а нам стать лучше для
+                            вас!
+                        </p>
+                        <a href="#" data-fancybox data-src="#callback" class="button">Оставить отзыв</a>
+                    </div>
+                    <picture class="service-promo__picture">
+                        <img src="./assets/images/review-pic.png" alt="">
                     </picture>
-                  </a>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="intro-slider__slide">
-                  <a href="#">
-                    <div class="intro-slider__content">
-                      <div class="intro-slider__content-wrapper">
-                        <p class="title title--page">Стоматология</p>
-                        <p class="title title--page">для детей и взрослых</p>
-                      </div>
-                      <p class="intro-slider__text"></p>
-                      <a href="#" class="button">Подробнее</a>
-                    </div>
-                    <picture class="intro-slider__picture">
-                      <source media="(max-width:767px)" srcset="assets/images/banner-intro-1-mob.jpg">
-                      <img src="assets/images/banner-intro-1.jpg" alt="">
-                    </picture>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="intro-slider__slide">
-                  <a href="#">
-                    <div class="intro-slider__content">
-                      <div class="intro-slider__content-wrapper">
-                        <p class="title title--page">Стоматология</p>
-                        <p class="title title--page">для детей и взрослых</p>
-                      </div>
-                      <p class="intro-slider__text"></p>
-                      <a href="#" class="button">Подробнее</a>
-                    </div>
-                    <picture class="intro-slider__picture">
-                      <source media="(max-width:767px)" srcset="assets/images/banner-intro-1-mob.jpg">
-                      <img src="assets/images/banner-intro-1.jpg" alt="">
-                    </picture>
-                  </a>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="slider__controls slider__controls--inner">
-            <button class="slider__button slider__button--prev" type="button" data-slider-prev>
-              <svg>
-                <use xlink:href="assets/sprite/sprite.svg#icon-arrow"></use>
-              </svg>
-            </button>
-            <button class="slider__button slider__button--next" type="button" data-slider-next>
-              <svg>
-                <use xlink:href="assets/sprite/sprite.svg#icon-arrow"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="slider__pagination" data-slider-pagination></div>
-        </div>
-      </div>
-    </section>
-    <section class="section mb-75 mbm-60">
-      <div class="container">
-        <form class="search" action="#" method="post" data-form>
-          <label class="search__label">
-            <input class="search__input" type="text" placeholder="Поиск по сайту">
-          </label>
-          <button class="search__button" type="submit">
-            <svg class="search__icon">
-              <use xlink:href="assets/sprite/sprite.svg#icon-search"></use>
-            </svg>
-          </button>
-          <p class="search__text">Например: <span data-action="/search/index.php"
-                                                  data-search-element="общий анализ крови">общий анализ крови</span></p>
-        </form>
-      </div>
-    </section>
-    <section class="section mb-80 mbm-75">
-      <div class="container">
-        <div class="services">
-          <h2 class="title mb-40">Стоматология в Калининграде</h2>
-          <div class="columns columns--gap-mob-10">
-            <div class="columns__col--6 columns__col-tab--6 columns__col-mob--12">
-              <div class="services__article" style="background-color: #E0ECF9">
-                <picture class="services__picture">
-                  <img src="assets/images/cat-1.jpg" alt="">
-                </picture>
-                <div class="services__title">Пародонтология и гигиена</div>
-                <div class="services__info">
-                  <p>Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и реализации
-                    новых предложений.</p>
-                </div>
-              </div>
-            </div>
-            <div class="columns__col--3 columns__col-tab--6 columns__col-mob--12">
-              <div class="services__article" style="background-color: #F9EFE0">
-                <picture class="services__picture">
-                  <img src="assets/images/cat-2.jpg" alt="">
-                </picture>
-                <div class="services__title">Имплантация</div>
-                <div class="services__info">
-                  <p>Разнообразный и богатый опыт рамки и место обучения кадров способствует </p>
-                </div>
-              </div>
-            </div>
-            <div class="columns__col--3 columns__col-tab--6 columns__col-mob--12">
-              <div class="services__article" style="background-color: #F6E9E9">
-                <picture class="services__picture">
-                  <img src="assets/images/cat-3.jpg" alt="">
-                </picture>
-                <div class="services__title">Протезирование</div>
-                <div class="services__info">
-                  <p>Разнообразный и богатый опыт рамки и место обучения кадров способствует </p>
-                </div>
-              </div>
-            </div>
-            <div class="columns__col--3 columns__col-tab--6 columns__col-mob--12">
-              <div class="services__article" style="background-color: #F5E9F6">
-                <picture class="services__picture">
-                  <img src="assets/images/cat-4.jpg" alt="">
-                </picture>
-                <div class="services__title">Хирургия</div>
-                <div class="services__info">
-                  <p>Разнообразный и богатый опыт рамки и место обучения кадров способствует </p>
-                </div>
-              </div>
-            </div>
-            <div class="columns__col--3 columns__col-tab--6 columns__col-mob--12">
-              <div class="services__article" style="background-color: #F6F6E9">
-                <picture class="services__picture">
-                  <img src="assets/images/cat-5.jpg" alt="">
-                </picture>
-                <div class="services__title">Детская стоматология</div>
-                <div class="services__info">
-                  <p>Разнообразный и богатый опыт рамки и место обучения кадров способствует </p>
-                </div>
-              </div>
-            </div>
-            <div class="columns__col--6 columns__col-tab--6 columns__col-mob--12">
-              <div class="services__article" style="background-color: #E0E5F9">
-                <picture class="services__picture">
-                  <img src="assets/images/cat-6.jpg" alt="">
-                </picture>
-                <div class="services__title">Терапевтическая стоматология</div>
-                <div class="services__info">
-                  <p>Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и реализации
-                    новых предложений.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section section--gray section--about">
-      <div class="container">
-        <div class="about-clinic">
-          <div class="about-clinic__intro">
-            <div class="about-clinic__info">
-              <h2 class="title">О клинике</h2>
-              <p class="about-clinic__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-                sunt
-                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur
-                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-                quia
-                dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
-                et
-                dolore magnam aliquam quaerat voluptatem.</p>
-            </div>
-            <picture class="about-clinic__picture">
-              <img src="./assets/images/about-teeth.jpg" alt="">
-            </picture>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-    <section class="section section--features mb-110">
-      <div class="container">
-        <div class="slider slider--features mb-30" data-slider data-looped="false" data-slider-slides="4">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <article class="article-feature">
-                  <picture class="article-feature__picture">
-                    <img src="./assets/images/icon-headphones.svg" alt="">
-                  </picture>
-                  <h3 class="article-feature__title">Бесплатная консультация</h3>
-                  <p class="article-feature__text">Мы предлагаем гибкий и бесплатный график встреч, чтобы вам было удобно
-                    обратиться.</p>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="article-feature">
-                  <picture class="article-feature__picture">
-                    <img src="./assets/images/icon-star-circle.svg" alt="">
-                  </picture>
-                  <h3 class="article-feature__title">Высокий рейтинг пользователей</h3>
-                  <p class="article-feature__text">Мы предлагаем новейшие методы и материалы для восстановления поврежденных
-                    зубов.</p>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="article-feature">
-                  <picture class="article-feature__picture">
-                    <img src="./assets/images/icon-chair.svg" alt="">
-                  </picture>
-                  <h3 class="article-feature__title">Лучшее оборудование</h3>
-                  <p class="article-feature__text">Наша команда стремится сделать ваш визит к стоматологу максимально
-                    комфортным и без стресса.</p>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="article-feature">
-                  <picture class="article-feature__picture">
-                    <img src="./assets/images/icon-stethoscope.svg" alt="">
-                  </picture>
-                  <h3 class="article-feature__title">Эксперт-стоматолог</h3>
-                  <p class="article-feature__text">Наша команда опытных стоматологов и стоматологов имеет многолетний опыт
-                    работы в различных областях стоматологии.</p>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="button centered">Наши работы</a>
-      </div>
-    </section>
-    <section class="section mb-85 mbm-100">
-      <div class="container">
-        <h3 class="title mb-40">Врачи-стоматологи</h3>
-        <div class="slider slider--about" data-slider data-slider-slides="4">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a class="card card--md" href="#">
-                  <picture class="card__picture">
-                    <img src="assets/images/doc.jpg" alt="">
-                  </picture>
-                  <div class="card__content">
-                    <div class="card__title">
-                      <p>Львович</p>
-                      <p>Инна Александровна</p>
-                    </div>
-                    <div class="card__text">
-                      <p>Нефролог</p>
-                    </div>
-                    <div class="card__text-accent">
-                      <p>Стаж 15 лет</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a class="card card--md" href="#">
-                  <picture class="card__picture">
-                    <img src="assets/images/doc-2.jpg" alt="">
-                  </picture>
-                  <div class="card__content">
-                    <div class="card__title">
-                      <p>Львович</p>
-                      <p>Инна Александровна</p>
-                    </div>
-                    <div class="card__text">
-                      <p>Нефролог</p>
-                    </div>
-                    <div class="card__text-accent">
-                      <p>Стаж 15 лет</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a class="card card--md" href="#">
-                  <picture class="card__picture">
-                    <img src="assets/images/doc.jpg" alt="">
-                  </picture>
-                  <div class="card__content">
-                    <div class="card__title">
-                      <p>Львович</p>
-                      <p>Инна Александровна</p>
-                    </div>
-                    <div class="card__text">
-                      <p>Нефролог</p>
-                    </div>
-                    <div class="card__text-accent">
-                      <p>Стаж 15 лет</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a class="card card--md" href="#">
-                  <picture class="card__picture">
-                    <img src="assets/images/doc.jpg" alt="">
-                  </picture>
-                  <div class="card__content">
-                    <div class="card__title">
-                      <p>Львович</p>
-                      <p>Инна Александровна</p>
-                    </div>
-                    <div class="card__text">
-                      <p>Нефролог</p>
-                    </div>
-                    <div class="card__text-accent">
-                      <p>Стаж 15 лет</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="slider__controls">
-            <button class="slider__button slider__button--prev" type="button" data-slider-prev>
-              <svg>
-                <use xlink:href="assets/sprite/sprite.svg#icon-arrow"></use>
-              </svg>
-            </button>
-            <button class="slider__button slider__button--next" type="button" data-slider-next>
-              <svg>
-                <use xlink:href="assets/sprite/sprite.svg#icon-arrow"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section mb-85 mbm-100">
-      <div class="container">
-        <h3 class="title mb-40">Отзывы</h3>
-        <div class="slider" data-slider data-slider-slides="3">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <article class="card card--review">
-                  <div class="card__content card--no-padding">
-                    <div class="card__title">Евгения</div>
-                    <div class="card__text card__text--14 card__text-lc card__text-lc--11">
-                      <p>Хочу выразить благодарность замечательному неврологу, профессионалу своего дела. Меня давно
-                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она назначила
-                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она назначила
-                        анализы, подобрала лечение. переживала за меня, беспокоилась. Все помогло и быстро! Очень
-                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам огромное за
-                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам огромное за
-                        помощь, за поддержку, за образец высокого звания Врач. С глубоким уважением, Евгения.</p>
-                    </div>
-                    <div class="card__bottom card__bottom--line">
-                      <address class="review-card__address mb-10">
-                        <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт на Иванникова</a>
-                      </address>
-                      <p class="card__bottom-text--accent">Иваненко Людмила Борисовна</p>
-                      <p class="card__bottom-text">Нефролог</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="card card--review">
-                  <div class="card__content card--no-padding">
-                    <div class="card__title">Евгения</div>
-                    <div class="card__text card__text--14 card__text-lc card__text-lc--11">
-                      <p>Хочу выразить благодарность замечательному неврологу, профессионалу своего дела. Меня давно
-                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она назначила
-                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она назначила
-                        анализы, подобрала лечение. переживала за меня, беспокоилась. Все помогло и быстро! Очень
-                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам огромное за
-                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам огромное за
-                        помощь, за поддержку, за образец высокого звания Врач. С глубоким уважением, Евгения.</p>
-                    </div>
-                    <div class="card__bottom card__bottom--line">
-                      <address class="review-card__address mb-10">
-                        <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт на Иванникова</a>
-                      </address>
-                      <p class="card__bottom-text--accent">Иваненко Людмила Борисовна</p>
-                      <p class="card__bottom-text">Нефролог</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="card card--review">
-                  <div class="card__content card--no-padding">
-                    <div class="card__title">Евгения</div>
-                    <div class="card__text card__text--14 card__text-lc card__text-lc--11">
-                      <p>Хочу выразить благодарность замечательному неврологу, профессионалу своего дела. Меня давно
-                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она назначила
-                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она назначила
-                        анализы, подобрала лечение. переживала за меня, беспокоилась. Все помогло и быстро! Очень
-                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам огромное за
-                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам огромное за
-                        помощь, за поддержку, за образец высокого звания Врач. С глубоким уважением, Евгения.</p>
-                    </div>
-                    <div class="card__bottom card__bottom--line">
-                      <address class="review-card__address mb-10">
-                        <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт на Иванникова</a>
-                      </address>
-                      <p class="card__bottom-text--accent">Иваненко Людмила Борисовна</p>
-                      <p class="card__bottom-text">Нефролог</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="card card--review">
-                  <div class="card__content card--no-padding">
-                    <div class="card__title">Евгения</div>
-                    <div class="card__text card__text--14 card__text-lc card__text-lc--11">
-                      <p>Хочу выразить благодарность замечательному неврологу, профессионалу своего дела. Меня давно
-                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она назначила
-                        мучили головные боли, я не спала нормально. Обратилась к Туяне Батуевне. Она назначила
-                        анализы, подобрала лечение. переживала за меня, беспокоилась. Все помогло и быстро! Очень
-                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам огромное за
-                        внимательный доктор с широким кругозором знаний. Туяна Батуевна, спасибо Вам огромное за
-                        помощь, за поддержку, за образец высокого звания Врач. С глубоким уважением, Евгения.</p>
-                    </div>
-                    <div class="card__bottom card__bottom--line">
-                      <address class="review-card__address mb-10">
-                        <a target="_blank" href="https://yandex.ru/maps/-/CCUgb2hVCA">Медэксперт на Иванникова</a>
-                      </address>
-                      <p class="card__bottom-text--accent">Иваненко Людмила Борисовна</p>
-                      <p class="card__bottom-text">Нефролог</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-          <div class="slider__controls">
-            <button class="slider__button slider__button--prev" type="button" data-slider-prev>
-              <svg>
-                <use xlink:href="assets/sprite/sprite.svg#icon-arrow"></use>
-              </svg>
-            </button>
-            <button class="slider__button slider__button--next" type="button" data-slider-next>
-              <svg>
-                <use xlink:href="assets/sprite/sprite.svg#icon-arrow"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="section footer">
+        </section>
+    </main>
+    <footer class="section footer">
   <div class="container">
     <div class="footer__inner">
       <div class="columns">
@@ -864,7 +929,7 @@
   </div>
 </footer>
 
-  <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
+    <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
 <section class="section">
   <div class="container">
     <style>

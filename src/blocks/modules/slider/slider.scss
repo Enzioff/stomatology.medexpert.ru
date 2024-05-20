@@ -129,6 +129,9 @@
   }
   
   &--features {
+    .swiper {
+      overflow: visible;
+    }
     .swiper-slide {
       height: auto;
     }
